@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/vira-romanko/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP/issues"
   },
-  "homepage": "https://github.com/vira-romanko/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP#readme"
+  "homepage": "https://github.com/vira-romanko/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  }
 }
