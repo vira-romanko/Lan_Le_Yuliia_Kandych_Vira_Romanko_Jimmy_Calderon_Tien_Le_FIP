@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vira-romanko/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vira-romanko/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP/issues"
+  },
+  "homepage": "https://github.com/vira-romanko/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP#readme"
+}
