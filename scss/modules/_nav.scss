@@ -1,3 +1,4 @@
+
 nav{
     //border-bottom: solid rgba(88, 86, 86, 0.5) 2px;
     background-color: $bg;
@@ -13,3 +14,11 @@ nav{
     margin-top:20px;
    
 }
+
+nav {
+  .first-button {
+    outline: none;
+    border: 0;
+  }
+}
+
