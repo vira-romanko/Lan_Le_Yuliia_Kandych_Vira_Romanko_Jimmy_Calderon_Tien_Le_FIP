@@ -1,3 +1,81 @@
 body{
     background-color: $bg;
 }
+
+
+//responsive font
+html {
+    font-size: 1rem;
+  .display-4{
+    font-size: 2.5rem;
+  }
+  // .social{
+  //   object{
+  //    height: 30%;
+  //   }
+  // }
+
+      //dropdown
+
+.dropdown-menu {
+  //display: inline;
+  background-color: rgb(201, 40, 40);
+  visibility: hidden;
+  opacity:0;
+  transform: translateY(50px);
+  transition:.5s ease all;
+  :active{
+    background-color: $bg;
+    color: black;
+  }
+}
+.dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity:1;
+  transform: translateY(0px);
+  transition:.5s ease all;
+}
+
+}
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.1rem;
+    
+      .display-4{
+        font-size: 2.7rem;
+      }
+      // .social{
+      //   object{
+      //     height: 30%;
+          
+         
+      //   }
+      // }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.2rem;
+    }
+    .display-4{
+      font-size: 3rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.3rem;
+      .display-4{
+        font-size: 3.5rem;
+      }
+
+      //dropdown
+
+.dropdown-menu {
+  display: block;
+  
+  }
+    }
+  }}
