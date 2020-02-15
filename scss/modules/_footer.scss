@@ -1,0 +1,32 @@
+footer{
+.logo-footer{
+    margin-top: 20px;
+}
+
+    
+        background-color: $gray;
+        margin: 0;
+        padding: 0;
+        .social-bottom{
+          object{
+              padding: 20px;
+              
+          }
+        }
+nav{
+    
+        background-color: $gray;
+        .nav-link{
+            color: white;
+            font-weight: bold;
+        }
+      
+}
+
+.line, a{
+    color: $bg;
+}
+
+
+}
+
