@@ -10,24 +10,26 @@ body{
 }
 
 .red-bg{
-  //margin:20px;
+  margin:20px;
   position: relative;
+ 
+
    img{
     
-    //width: 500px;
-    padding-left: 20px;
-    width:443px;
-    height:257px; 
+    margin: 20px;
+   
+
+   
+    position: absolute;
 
    }
    h4{
      text-align: center;
-      //margin-left: 100px;
-      top: 50px;
-      left: 140px;
-      position: absolute;
+ 
+      top: 0px;
+      left: 0;
       z-index: 200;
-      bottom: 8%;
+     
       color:$bg;
       font-weight: bold;
       font-size: 2rem;
@@ -35,15 +37,14 @@ body{
    }
 
    p{
-     position: absolute;
-     top: 120px;
-     left: 90px;
-     width: 300px;
+     
+     top: 0px;
+     padding: 10px;
+     
      text-align: center;
-     display: block;
-     //margin-top: 40px;
+    
      z-index: 200;
-     bottom: 8%;
+    
      color: $bg;
    }
 }

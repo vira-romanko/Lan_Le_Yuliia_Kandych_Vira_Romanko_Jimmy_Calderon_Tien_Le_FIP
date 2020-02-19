@@ -7147,30 +7147,24 @@ body {
   color: red; }
 
 .red-bg {
+  margin: 20px;
   position: relative; }
   .red-bg img {
-    padding-left: 20px;
-    width: 443px;
-    height: 257px; }
+    margin: 20px;
+    position: absolute; }
   .red-bg h4 {
     text-align: center;
-    top: 50px;
-    left: 140px;
-    position: absolute;
+    top: 0px;
+    left: 0;
     z-index: 200;
-    bottom: 8%;
     color: white;
     font-weight: bold;
     font-size: 2rem; }
   .red-bg p {
-    position: absolute;
-    top: 120px;
-    left: 90px;
-    width: 300px;
+    top: 0px;
+    padding: 10px;
     text-align: center;
-    display: block;
     z-index: 200;
-    bottom: 8%;
     color: white; }
 
 .news .news-img {
