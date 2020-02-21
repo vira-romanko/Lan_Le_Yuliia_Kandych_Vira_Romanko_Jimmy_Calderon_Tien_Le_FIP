@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="shortcut icon" type="image/png" href="#" />
   <title>Home Page</title>
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-light navbar-expand-lg  mb-4 sticky-top">
 
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#"><img width="100%" class="img-fluid logo ml-2" src="images/logo.svg"
+      <a class="navbar-brand" href="index.html"><img width="100%" class="img-fluid logo ml-2" src="images/logo.svg"
           alt="logo" /></a>
 
       <!-- Collapse button -->
@@ -42,14 +42,14 @@
         <!-- Links -->
         <ul class="navbar-nav  ml-lg-auto ml-2">
           <li class="nav-item active">
-            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" data-toggle="dropdown"
               role="button">AWARNESS</a>
             <div class="dropdown-menu dropdown-primary">
-              <a class="dropdown-item" href="#">HIV/AIDS BASIC</a>
-              <a class="dropdown-item" href="#">LIVING WITH HIV</a>
+              <a class="dropdown-item" href="hiv_basics.html">HIV/AIDS BASIC</a>
+              <a class="dropdown-item" href="living_with_hiv.html">LIVING WITH HIV</a>
               <!-- <div class="dropdown-divider"></div> -->
               <a class="dropdown-item" href="#">STIGMA</a>
             </div>
@@ -80,10 +80,11 @@
             KNOW</span></h1>
         <div class="characters col-md-7">
           <div class="d-flex crh-box row justify-content-center">
-            <object width="100%" data="images/hero_1.svg" type="image/svg+xml" class="img-fluid row "></object>
-            <object width="100%" data="images/hero_1.svg" type="image/svg+xml" class="img-fluid row"></object>
-            <object width="100%" data="images/hero_1.svg" type="image/svg+xml" class="img-fluid row"></object>
-            <object width="100%" data="images/hero_1.svg" type="image/svg+xml" class="img-fluid row"></object>
+            <!-- <object width="100%" data="images/hero_1.svg" type="image/svg+xml" class="img-fluid row "></object> -->
+            <object width="100%" data="images/hero_2.svg" type="image/svg+xml" class="img-fluid row"></object>
+            <object width="100%" data="images/hero_3.svg" type="image/svg+xml" class="img-fluid row"></object>
+            <object width="100%" data="images/hero_4.svg" type="image/svg+xml" class="img-fluid row"></object>
+            <object width="100%" data="images/heor_5.svg" type="image/svg+xml" class="img-fluid row"></object>
 
 
           </div>
@@ -91,7 +92,7 @@
 
 
 
-        <div class="d-flex col-0 social  mt-md-0">
+        <div class="d-flex col-0 social social-animation mt-md-0">
           <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid row "></object>
           <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid row "></object>
           <object data="images/snapchat.svg" type="image/svg+xml" class="img-fluid row "></object>
@@ -107,25 +108,25 @@
         
 
       
-        <div class="d-flex row  justify-content-center flex-wrap mt-4">
-          <div class="red-bg">
+        <div class="d-flex red-box-parent row justify-content-center flex-wrap mt-4">
+          <div data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-out"  class="red-bg col-lg-4">
             <img class="img-fluid" src="images/red_bg.svg" alt="red bg">
-            <h4 class="first-number">24 500 000</h4>
+            <h4 class="header-numbers">24 500 000</h4>
             <p>people were accessing
               antiretroviral therapy</p>
           </div>
 
-          <div class="red-bg">
+          <div data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="50" class="red-bg col-lg-4">
             <img class="img-fluid" src="images/red_bg_2.svg" alt="red bg 2">
-            <h4>37 900 000</h4>
+            <h4 class="header-numbers">37 900 000</h4>
             <p>people globally were
               living with HIV
             </p>
           </div>
 
-          <div class=" red-bg">
+          <div data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="100" class="red-bg col-lg-4 ">
             <img class="img-fluid" src="images/red_bg_3.svg" alt="red bg 3">
-            <h4>17 000 000</h4>
+            <h4 class="header-numbers">17 000 000</h4>
             <p>people became newly
               Infected with HIV</p>
           </div>
@@ -139,35 +140,45 @@
 
       <div class="know">
         <h2 class=" display-4 main-title text-center mt-5">DO YOU KNOW...</h2>
-        <div class="black-box img-fluid">
-
+        <div class="black-box" data-aos="fade-right"  data-aos-duration="2000">
+          <img src="images/black_box.jpg" alt="black-box"/>
           <h4 class="float-right">... what HIV/AIDS is?</h4>
           <p class="float-right"> HIV stands for Human Immunodeficiency Virus. It is a virus that attacks the immune
             system. It attacks and destroys white blood cells and makes copies of itself in these cells, which are our
             body’s natural defence against illness. </p>
+            <p class="more-info float-right mr-4">
+              
+              <a href="#" class="btn btn-red btn-animation-1">More info</a></p>
 
-
+            <object data="images/yellow_character.svg" type="image/svg+xml" class="img-fluid row "></object>
 
         </div>
-        <div class="black-box img-fluid left-box">
-
+        <div class="black-box left-box" data-aos="fade-left"  data-aos-duration="2000">
+          <img src="images/black_box_left.jpg" alt="black-box"/>
           <h4>...how people are living with HIV?</h4>
           <p> Currently, over 30% of all new HIV infections globally are estimated to occur among youth ages 15 to 25
             years. Also, increasingly, children infected at birth grow into adolescents who have to deal with their HIV
             positive status. Combining the two, there is 5 million youth living with HIV.
           </p>
+          <p class="more-info float-right mr-4">
+              
+            <a href="#" class="btn btn-red btn-animation-1">More info</a></p>
 
-
+          <object  data="images/purple_character.svg" type="image/svg+xml" class="img-fluid d-flex mr-auto"></object>
 
         </div>
-         <div class="black-box img-fluid">
+         <div class="black-box" data-aos="fade-right"  data-aos-duration="2000">
+           <img src="images/black_box.jpg" alt="black-box"/>
 
           <h4 class="float-right">... what HIV/AIDS is?</h4>
           <p class="float-right"> HIV stands for Human Immunodeficiency Virus. It is a virus that attacks the immune
             system. It attacks and destroys white blood cells and makes copies of itself in these cells, which are our
             body’s natural defence against illness. </p>
+            <p class="more-info float-right mr-4">
+              
+              <a href="#" class="btn btn-red btn-animation-1">More info</a></p>
 
-
+            <object data="images/red_character.svg" type="image/svg+xml" class="img-fluid row "></object>
 
         </div>
 
@@ -177,115 +188,129 @@
       <div class="protect">
 
         <div class="d-flex row box-blue-bg justify-content-center mt-4">
+          <img data-aos="fade-up" data-aos-duration="3000" class="img-fluid" src="images/blue_box.jpg" alt="box svg">
+          
+          
           <h2 class=" display-4 main-title white-t text-center mt-5">PROTECT YOURSELF</h2>
-          <div class="box-blue-bg">
-            <img class="img-fluid" src="images/blue_box.jpg" alt="box svg">
-            <p>Protecting yourself from HIV begins with understanding how the virus is spread.
-              The virus can be passed in only certain ways: During sex with a person infected with HIV;
-              By sharing a contaminated needle, such as through illicit drug use …</p>
-            <div class="row">
 
-            </div>
+          <p>Protecting yourself from HIV begins with understanding how the virus is spread.
+            The virus can be passed in only certain ways: During sex with a person infected with HIV;
+            By sharing a contaminated needle, such as through illicit drug use …</p>
+            <p class="row justify-content-center link-protect">
+              
+                <a href="#" class="btn btn-white btn-animation-1">Safe sex</a>
+           
+              
+                <a class="btn btn-white btn-animation-1" href="#">Safe drug use</a>
+             
+              
+            </p>
+           
 
-
-
-          </div>
-        </div>
-        <!-- Protect yourself section ends -->
-
-        <!-- UP to test section starts -->
-        <div class="test">
-          <h2 class=" display-4 main-title text-center mt-5">UP TO TEST?</h2>
-          <div class="d-flex row box-bg justify-content-center mt-4">
-            <div class=" box-bg">
-              <img class="img-fluid" src="images/box.svg" alt="box svg">
-              <h4>What is HIV test?
-              </h4>
-              <p>The HIV test is a blood test. There are two ways this test can be done.
-                Rapid tests, also known as “point-of-care” tests, offer results within minutes after blood is taken,
-                usually from a fingerprick.
-                Standard tests usually involve blood being taken from a vein in the arm. The blood is then sent to a lab
-                for testing. The results take two weeks… </p>
-              <a href="#">More info</a>
-            </div>
-          </div>
-        </div>
-        <!-- Up to test ends -->
+            <object data-aos="fade-up" data-aos-duration="2000"data="images/blue-char.svg" type="image/svg+xml" class="img-fluid row "></object>
 
 
-        <!-- news  starts-->
-        <div class="news">
-          <h2 class=" display-4 main-title text-center mt-5">LATEST NEWS</h2>
-          <div class="d-flex flex-wrap justify-content-center m-4">
-            <div class="text-center p-3">
-              <img class="img-fluid news-img" src="images/news.svg" alt="news icon" />
-              <h4 class="subtitle text-center">NEW RESEARCH ABOUT HIV</h4>
-              <p>JANUARY 30, 2020</p>
-            </div>
-            <div class="text-center p-3">
-              <img class="img-fluid news-img" src="images/news_1.svg" alt="news icon" />
-              <h4 class="subtitle">DOCTORS THAT SAVE LIVES</h4>
-              <p>JANUARY 30, 2020</p>
-            </div>
-            <div class="text-center p-3">
-              <img class="img-fluid news-img" src="images/news_3.svg" alt="news icon" />
-              <h4 class="subtitle">FDA-Approved HIV Medicines</h4>
-              <p>JANUARY 30, 2020</p>
-            </div>
-          </div>
 
         </div>
-        <!-- news ends -->
+      </div>
+      <!-- Protect yourself section ends -->
+
+      <!-- UP to test section starts -->
+      <div class="test">
+        <h2 class=" display-4 main-title text-center  mb-0">UP TO TEST?</h2>
+        <div data-aos="zoom-in-left" data-aos-duration="2000"  class="d-flex   justify-content-center mt-4">
+          <div class=" box-bg">
+            <img class="img-fluid" src="images/box.svg" alt="box svg">
+            <h4>What is HIV test?
+            </h4>
+            <p>The HIV test is a blood test. There are two ways this test can be done.
+              Rapid tests, also known as “point-of-care” tests, offer results within minutes after blood is taken,
+              usually from a fingerprick.
+              Standard tests usually involve blood being taken from a vein in the arm. The blood is then sent to a lab
+              for testing. The results take two weeks… </p>
+              <p class="link-test">
+                <a href="#" class="btn btn-red btn-animation-1">More info</a>
+              </p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Up to test ends -->
+
+
+      <!-- news  starts-->
+      <div class="news">
+        <h2 class=" display-4 main-title text-center mt-5">LATEST NEWS</h2>
+        <div class="d-flex flex-wrap justify-content-center m-4">
+          <div class="text-center p-3">
+            <img class="img-fluid news-img" src="images/news.svg" alt="news icon" />
+            <h4 class="subtitle text-center">NEW RESEARCH ABOUT HIV</h4>
+            <p>JANUARY 30, 2020</p>
+          </div>
+          <div class="text-center p-3">
+            <img class="img-fluid news-img" src="images/news_1.svg" alt="news icon" />
+            <h4 class="subtitle">DOCTORS THAT SAVE LIVES</h4>
+            <p>JANUARY 30, 2020</p>
+          </div>
+          <div class="text-center p-3">
+            <img class="img-fluid news-img" src="images/news_3.svg" alt="news icon" />
+            <h4 class="subtitle">FDA-Approved HIV Medicines</h4>
+            <p>JANUARY 30, 2020</p>
+          </div>
+        </div>
 
       </div>
-      <!-- container ends -->
-      <!-- Footer starts -->
+      <!-- news ends -->
+
+    </div>
+    <!-- container ends -->
+    <!-- Footer starts -->
+  </div>
+
+  <footer class="bottom text-center mt-4">
+    <img class="logo-footer img-fluid" src="images/logo_footer.svg" alt="footer logo" />
+    <div class="d-flex justify-content-center social-bottom">
+      <object data="images/footer_youtube.svg" type="image/svg+xml" class="img-fluid row "></object>
+      <object data="images/footer_twitter.svg" type="image/svg+xml" class="img-fluid row "></object>
+      <object data="images/footer_snapchat.svg" type="image/svg+xml" class="img-fluid row "></object>
+      <object data="images/footer_instagram.svg" type="image/svg+xml" class="img-fluid row "></object>
+      <object data="images/footer_facebook.svg" type="image/svg+xml" class="img-fluid row "></object>
     </div>
 
-    <footer class="bottom text-center mt-4">
-      <img class="logo-footer img-fluid" src="images/logo_footer.svg" alt="footer logo" />
-      <div class="d-flex justify-content-center social-bottom">
-        <object data="images/footer_youtube.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_twitter.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_snapchat.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_instagram.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_facebook.svg" type="image/svg+xml" class="img-fluid row "></object>
-      </div>
+    <nav class="navbar  navbar-expand-md justify-content-center mb-4">
+      <div class="navbar ">
 
-      <nav class="navbar  navbar-expand-md justify-content-center mb-4">
-        <div class="navbar ">
+        <!-- Links -->
+        <ul class="navbar-nav  ml-lg-auto ml-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">AWARNESS</a>
 
-          <!-- Links -->
-          <ul class="navbar-nav  ml-lg-auto ml-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">HOME </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">AWARNESS</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">PREVENTION</a>
 
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#">PREVENTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HIV TEST</a>
+          </li>
 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">HIV TEST</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
+    </nav>
+    <div class="d-flex justify-content-around">
+      <p class="line">® HIV 2020. All rights reserved </p>
+      <a href="#" class="row"> Privacy Policy</a>
+    </div>
 
-      </nav>
-      <div class="d-flex justify-content-around">
-        <p class="line">® HIV 2020. All rights reserved </p>
-        <a href="#" class="row"> Privacy Policy</a>
-      </div>
+  </footer>
+  <!-- footer ends -->
 
-    </footer>
-    <!-- footer ends -->
-
-    <!-- app div ends -->
+  <!-- app div ends -->
   </div>
 
 
@@ -298,8 +323,18 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/odometer.js"></script>
   <script src="js/animations.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       once: false,
+        offset: 100,
+        duration: 5000
+        
+    });
+   
+    
+  </script> 
 </body>
 
 </html>

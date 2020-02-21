@@ -1,10 +1,14 @@
 //Bootstrap Sass Files
 @import "../node_modules/bootstrap/scss/bootstrap";
 //Modules
+//General Modules
 @import "modules/vars.scss";
-@import "modules/basic.scss";
 @import "modules/nav.scss";
-@import "modules/animation.scss";
 @import "modules/footer.scss";
-@import "modules/hero.scss";
-@import "modules/media.scss";
+//Each page
+@import "modules/awarness/main_awarness.scss";
+@import "modules/contact/main_contact.scss";
+@import "modules/home/main_home.scss";
+@import "modules/prevention/main_prevention.scss";
+@import "modules/test/main_test.scss";
+
