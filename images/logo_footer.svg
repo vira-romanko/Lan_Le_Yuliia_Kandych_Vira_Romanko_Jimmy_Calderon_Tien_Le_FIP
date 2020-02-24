@@ -1,5 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 53.853 98.692">
-  <g id="logo-with-eyes" transform="translate(0 0.002)">
+<svg id="logo_footer" xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 53.853 98.692">
+<style type="text/css">
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+
+  #logo_footer:hover st7{
+   transform: rotate(360deg) !important;
+   cursor:pointer !important;
+  
+ 
+    }
+    </style>
+  <g id="logo-with-eyes" class="st7" transform="translate(0 0.002)">
     <path id="mouth" d="M182.318,92.343s4.953-3.97,9.594-.472c0,0,2.521-8.254-4.8-9.088S182.318,92.343,182.318,92.343Z" transform="translate(-160.254 -74.096)" fill="#5a5a5a" style="isolation: isolate"/>
     <path id="_2_right" data-name="2 right" d="M23.617,169.221s39.33-69.88,30.791-78.662S41.29,78.771,39.369,78.65l-.064,1.685s7.044,1.2,3.556,9.26-5.894,14.674-5.894,14.674-15.635,36.325-24.9,46.067Z" transform="translate(-12.07 -70.531)" fill="#b1b1b1" style="isolation: isolate"/>
     <path id="_1_left" data-name="1 left" d="M124.9,169.221S85.57,99.341,94.111,90.559s13.118-11.788,15.039-11.909l.064,1.685s-7.044,1.2-3.556,9.26,5.893,14.674,5.893,14.674,15.643,36.325,24.9,46.067Z" transform="translate(-82.596 -70.531)" fill="#eaeaea" style="isolation: isolate"/>

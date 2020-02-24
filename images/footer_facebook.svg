@@ -1,5 +1,16 @@
-<svg id="_045-facebook" data-name="045-facebook" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 37.284 37.283">
+<svg id="facebook" data-name="045-facebook" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 37.284 37.283">
+<style type="text/css">
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+
+  #facebook:hover .st6{
+    cursor:pointer !important;
+    fill:#c92c32!important;
+    transition: 600ms cubic-bezier(.99,0,.57,.94) !important;
+  
+ 
+    }
+    </style>
   <g id="Group_10" data-name="Group 10">
-    <path id="Path_6" data-name="Path 6" d="M32.623,0H4.66A4.665,4.665,0,0,0,0,4.66V32.623a4.665,4.665,0,0,0,4.66,4.66H18.642V24.467h-4.66V18.642h4.66v-4.66a6.99,6.99,0,0,1,6.991-6.991h4.66v5.825h-2.33c-1.286,0-2.33-.121-2.33,1.165v4.66h5.826l-2.33,5.825h-3.5V37.283h6.991a4.665,4.665,0,0,0,4.66-4.66V4.66A4.665,4.665,0,0,0,32.623,0Z" fill="#fff"/>
+    <path id="Path_6" class="st6" data-name="Path 6" d="M32.623,0H4.66A4.665,4.665,0,0,0,0,4.66V32.623a4.665,4.665,0,0,0,4.66,4.66H18.642V24.467h-4.66V18.642h4.66v-4.66a6.99,6.99,0,0,1,6.991-6.991h4.66v5.825h-2.33c-1.286,0-2.33-.121-2.33,1.165v4.66h5.826l-2.33,5.825h-3.5V37.283h6.991a4.665,4.665,0,0,0,4.66-4.66V4.66A4.665,4.665,0,0,0,32.623,0Z" fill="#fff"/>
   </g>
 </svg>
