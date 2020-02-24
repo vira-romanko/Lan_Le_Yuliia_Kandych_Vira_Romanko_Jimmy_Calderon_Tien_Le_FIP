@@ -27,15 +27,7 @@ html {
   transition:.5s ease all;
 }
 
-// .red-bg{
-//   img{
-//    width:400px;
-//    height:200px; 
-//   }
-//   p{
-//     width: 250px;
-//   }
-//  }
+
 
 
 }
@@ -71,13 +63,37 @@ html {
       font-size: 3rem;
     }
 
+   .box-bg{
+
+    h4{
+      margin-top: 20px;
+      padding-top: 80px;
+      margin-left: 40px;
+    }
+    p{
+      font-size: 15px;
+      margin-top: 20px;
    
+     margin-left: 40px;
+     margin-right: 80px;
+    }
+    
+    .link-test{
+      margin-bottom: 300px;
+    }
+
+
+   }
     
   }
   
   @include media-breakpoint-up(lg) {
     html {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
+      p{
+        font-size: 2.5vh;
+      }
+      
       .display-4{
         font-size: 3.5rem;
       }
@@ -90,6 +106,34 @@ html {
   display: block;
   
   }
+
+
+  .box-bg{
+     h4{
+       margin-left: 120px;
+       font-size: 2rem;
+     }
+ 
+    p{
+      padding:0 80px 0px 80px;
     
+      margin-top: 30px;
+      
+      margin-right: 100px;
+      text-align: left;
+      font-size: 20px;
+      color: $gray;
+    }
+    .link-test{
+      margin-bottom: 300px;
+    }
+
+   }
+    
+  }
+  .black-box{
+    object{
+      width: 26%;
+    }
   }
 }

@@ -19,14 +19,25 @@ nav{
         .nav-link{
             color: white;
             font-weight: bold;
+            &:hover{
+                color:#c92c32;
+                transition: 600ms cubic-bezier(.99,0,.57,.94);
+            }
         }
       
 }
 
 .line, a{
     color: $bg;
+  
+   
 }
-
+a{
+    &:hover{
+        color:#c92c32;
+        transition: 600ms cubic-bezier(.99,0,.57,.94);
+    }
+}
 
 }
 

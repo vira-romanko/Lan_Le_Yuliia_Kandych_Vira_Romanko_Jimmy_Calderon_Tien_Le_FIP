@@ -1,0 +1,134 @@
+.hero-basic{
+    position: relative;
+  
+    
+}
+
+
+
+.red-box-basic{
+    position: relative;
+    color: $white;
+    img{
+        position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0;
+    
+    }
+    p{
+        padding: 60px 45px 60px 45px;
+        margin:25px;
+        text-align: center;
+    }
+  
+    
+}
+
+.blue-bg-basic{
+    margin:0px;
+    position: relative;
+   
+   
+  
+     img{
+      
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+      object-fit: fill;
+      top: 0;
+      
+  
+     }
+     h4{
+       text-align: center;
+       margin-top: 40px;
+        color:$bg;
+        font-weight: bold;
+        font-size: 2rem;
+        //padding-top: 30px;
+  
+     }
+  
+     p{
+       
+     padding: 40px;
+     margin: 0 50px 0px 50px;
+       text-align: center;
+       color: $bg;
+       
+     }
+  }
+  
+  .hiv-aids{
+      img{
+          max-width: 50%;
+      }
+  }
+  
+
+
+@include media-breakpoint-up(md) {
+    .red-box-basic{
+        p{
+            padding: 50px;
+            margin: 60px;
+            font-size: 1rem;
+        }
+    }
+    .youth{
+        img{
+            max-width: 300px;
+        }
+    }
+
+
+    .blue-bg-basic{
+       
+      
+         p{
+           
+         padding-left: 96px;
+         padding-right: 96px;
+         margin: 0 50px 0px 50px;
+           text-align: center;
+           color: $bg;
+           
+         }
+      }
+}
+
+@include media-breakpoint-up(lg) {
+    .red-box-basic{
+        p{
+            padding: 80px;
+            margin:80px;
+            
+        }
+    }
+
+    .blue-bg-basic{
+        h4{
+            padding: 0px;
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 1.3rem;
+        }
+      
+        p{
+          
+        padding-left: 0px;
+         padding-right: 0px;
+        margin: 0;
+          text-align: center;
+          color: $bg;
+          
+        }
+     }
+}
