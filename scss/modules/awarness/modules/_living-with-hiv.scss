@@ -18,8 +18,98 @@ li,p,ul,a{
        top: 0;
    }
 
-   
+   h4{
+    //margin-top: 150px;
+    margin-left: 80px;
+    color: $red;
+    font-weight: bold;
+    //padding-top: 100px;
+  }
+
+  p{
+    padding-top: 10px;
+
+    text-align: center;
+    font-size: 12px;
+  }
 
 
 }
+.red-bg-living{
+    position: relative;
+    display: flex;
+    //flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
+    img{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+        object-fit: fill;
+        top: 0;
+    }
+
+ 
+   
+      p{
+        
+      
+        padding:40px;
+        margin: 25px;
+        text-align: center;
+        color: $bg;
+      }
+}
+.char-living{
+    img{
+        max-width: 70%;
+    }
+}
+@include media-breakpoint-up(md) {
+    .red-bg-living{
+        p{
+            padding-left: 50px;
+            padding-right: 50px;
+            margin: 80px;
+           
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+
+    .connection{
+        h4{
+            //margin-top: 150px;
+            margin-left: 80px;
+            color: $red;
+            padding-top: 100px;
+            font-size: 2rem;
+          }
+        
+          p{
+            padding-top: 50px;
+        
+            text-align: center;
+            font-size: initial;
+          }
+
+    }
+
+    .red-bg-living{
+        p{
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 20px;
+            text-align: center;
+           
+        }
+    }
+    .char-living{
+        img{
+            max-width: 30%;
+        }
+    }
+}
