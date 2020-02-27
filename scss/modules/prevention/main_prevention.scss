@@ -1,0 +1,58 @@
+.know{
+    h4{
+        color: $red;
+    }
+    .left-box.drugs{
+        h4{
+            margin-top: 0;
+            padding-top: 20;
+            color: $red;
+        }
+    }
+}
+
+.condom{
+    img{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.paragraph{
+    font-size: 1rem;
+}
+
+.honest{
+    background-image: url('/images/safe_sex_red_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    p{
+        padding: 10px;
+        padding-right: 20px;
+       // margin: 5px;
+    }
+    .block
+        img{
+            position:initial;
+            width: 67px;
+            height: 80px;
+            padding: 4px;
+            margin: 0;
+            
+        }
+    
+}
+
+.red-span{
+    span{
+        color: $red;
+        display: block;
+    }
+}
+
+.bottom-p{
+    font-weight: bold;
+    color: $red;
+    font-size: 1rem;
+}
