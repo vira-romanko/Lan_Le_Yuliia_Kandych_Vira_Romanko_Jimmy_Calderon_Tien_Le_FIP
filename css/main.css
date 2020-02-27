@@ -7349,11 +7349,8 @@ body {
     margin: 20px;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
-    padding-top: 30px; }
+    font-size: 1rem; }
   .red-bg p {
-    padding: 40px;
-    margin: 25px;
     text-align: center;
     color: white; }
 
@@ -7447,12 +7444,7 @@ body {
     object-fit: fill;
     top: 0; }
 
-.know h4 {
-  margin-top: 150px;
-  margin-right: 80px; }
-
 .know p {
-  padding: 50px;
   text-align: center; }
 
 .know .left-box h4 {
@@ -7688,10 +7680,9 @@ a:active {
     margin: 0;
     padding: 0; }
   .jumbotron .social {
-    margin-left: 30px; }
+    height: 50px; }
     .jumbotron .social object {
-      margin-top: 10px;
-      margin-left: 30px; }
+      max-width: 100%; }
 
 html {
   font-size: 1rem; }

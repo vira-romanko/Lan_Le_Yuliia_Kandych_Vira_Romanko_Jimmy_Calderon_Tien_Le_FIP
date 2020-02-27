@@ -1,6 +1,7 @@
 body{
     background-color: $bg;
     font-family: $font;
+    
 }
 
 .main-title{
@@ -39,16 +40,15 @@ body{
      margin: 20px;
       color:$bg;
       font-weight: bold;
-      font-size: 2rem;
-      padding-top: 30px;
+      font-size: 1rem;
+
 
    }
 
    p{
      
    
-     padding:40px;
-     margin: 25px;
+   
      text-align: center;
      color: $bg;
    }
@@ -208,12 +208,11 @@ body{
 //LEFT BOX
 .know{
   h4{
-    margin-top: 150px;
-    margin-right: 80px;
+   
   }
 
   p{
-    padding: 50px;
+  
     text-align: center;
   }
 
