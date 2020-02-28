@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7249,7 +7251,7 @@ li, p, ul, a {
 
 .red-box-basic {
   position: relative;
-  color: #fff; }
+  color: white; }
   .red-box-basic img {
     position: absolute;
     width: 100%;
@@ -7608,7 +7610,7 @@ a:active {
   transition: all .5s; }
 
 .btn-white::after {
-  background: #fff; }
+  background: white; }
 
 .btn-animation-1:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -7635,7 +7637,7 @@ a:active {
 
 .btn-red {
   background: #FF0000;
-  color: #fff; }
+  color: white; }
 
 .btn:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
@@ -7784,7 +7786,7 @@ html {
   background-image: url("/images/safe_sex_red_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff; }
+  color: white; }
   .honest p {
     padding: 10px;
     padding-right: 20px; }
