@@ -3,19 +3,19 @@ export default {
         `
     <form action="./admin/admin_createuser.php" method="POST">
         <label>First Name:</label>
-        <input type="text" name="fname" value=""><br>
+        <input v-model='fname' type="text" name="fname" value=""><br>
 
         <label>Username:</label>
-        <input type="text" name="username" value=""><br>
+        <input v-model='username' type="text" name="username" value=""><br>
 
         <label>Password:</label>
-        <input type="text" name="password" value=""><br>
+        <input v-model='password' type="password" name="password" value=""><br>
 
         <label>Email:</label>
-        <input type="text" name="email" value=""><br>
+        <input v-model='email' type="text" name="email" value=""><br>
 
-
-        <button type="submit" name="submit">Create User</button>
+        {{status}}
+        <button @click.prevent="signUp" type="submit" name="submit">Create User</button>
     </form>
     `,
     data() {
@@ -23,19 +23,20 @@ export default {
             fname: '',
             username: '',
             password: '',
-            email: ''
+            email: '',
+            status: ''
         }
 
     },
 
     methods: {
-        login(e) {
+        signUp(e) {
             e.preventDefault()
             if (this.username != "" && this.password != "") {
                 let formData = new FormData();
 
                 formData.append('fname', this.username)
-                formData.append('password', this.password)
+                formData.append('username', this.username)
                 formData.append('password', this.username)
                 formData.append('email', this.password)
 
@@ -49,11 +50,12 @@ export default {
                     .then(res => res.json())
                     .then(data => {
                         console.log(data)
+                        this.status = data
                     })
                     .catch(err => console.log(err))
 
             } else {
-                console.log('type in username and password')
+                this.status = 'type in username and password'
             }
 
 
