@@ -1,5 +1,5 @@
 export default {
-    template: `
+  template: `
     <div>
     <div class="jumbotron">
     <div class="hero  align-items-center row flex-wrap">
@@ -164,23 +164,17 @@ export default {
    
     <div class="news">
       <h2 class=" display-4 main-title text-center mt-5">LATEST NEWS</h2>
-      <div class="d-flex flex-wrap justify-content-center m-4">
-        <div class="text-center p-3">
-          <img class="img-fluid news-img" src="images/news.svg" alt="news icon" />
-          <h4 class="subtitle text-center">NEW RESEARCH ABOUT HIV</h4>
-          <p>JANUARY 30, 2020</p>
-        </div>
-        <div class="text-center p-3">
-          <img class="img-fluid news-img" src="images/news_1.svg" alt="news icon" />
-          <h4 class="subtitle">DOCTORS THAT SAVE LIVES</h4>
-          <p>JANUARY 30, 2020</p>
-        </div>
-        <div class="text-center p-3">
-          <img class="img-fluid news-img" src="images/news_3.svg" alt="news icon" />
-          <h4 class="subtitle">FDA-Approved HIV Medicines</h4>
-          <p>JANUARY 30, 2020</p>
+      <div class="row justify-content-center m-4">
+        <div  class="text-center p-3 col-12 col-lg-6"  v-for="article in articles">
+          <a :href='article.url'>
+            <img class="img-fluid news-img" :src='article.urlToImage' alt="news icon" />
+            <h4 class="subtitle text-center">{{article.title}}</h4>
+            <p>{{article.publishedAt}}</p>  
+          </a>      
         </div>
       </div>
+        
+    
 
     </div>
    
@@ -190,5 +184,19 @@ export default {
 </div>
 </div>
 
-    `
+    `,
+
+  data() {
+    return {
+      articles: null
+    }
+  },
+
+  mounted() {
+    console.log('mounted')
+    let url = 'https://newsapi.org/v2/everything?qInTitle=hiv&apiKey=0b89d19105dc493bb2b0465a8152dec8&pageSize=4&sortBy=relevancy&fbclid=IwAR1OBl735Dd52VkjVPhSBe_tdsb6aUCIFx7o6JBmcmrVefni2vJ6NqEmSJs'
+    fetch(url)
+      .then(res => res.json())
+      .then(data => this.articles = data.articles)
+  }
 }

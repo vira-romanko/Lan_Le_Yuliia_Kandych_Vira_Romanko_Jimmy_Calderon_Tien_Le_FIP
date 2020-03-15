@@ -60,6 +60,8 @@ body{
   margin-top: 20px;
   .news-img{
     width: 80%;
+    object-fit: cover;
+    height: 60%;
   }
  .subtitle{
    color: red;
