@@ -188,7 +188,10 @@ export default {
 
   data() {
     return {
-      articles: null
+      articles: null,
+      number:{
+        
+      }
     }
   },
 
