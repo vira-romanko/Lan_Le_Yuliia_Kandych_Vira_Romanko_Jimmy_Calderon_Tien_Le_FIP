@@ -1,4 +1,7 @@
+
+
 export default {
+
   template: `
     <div>
     <div class="jumbotron">
@@ -112,6 +115,7 @@ export default {
 
     </div>
 
+    
    
     <div class="protect">
 
@@ -180,8 +184,9 @@ export default {
    
 
   </div>
- 
+  <div id="map"></div>
 </div>
+
 </div>
 
     `,
@@ -198,5 +203,91 @@ export default {
     fetch(url)
       .then(res => res.json())
       .then(data => this.articles = data.articles)
+
+    var map, infoWindow;
+
+    map = new google.maps.Map(document.getElementById('map'), {
+
+      zoom: 15
+    });
+    infoWindow = new google.maps.InfoWindow;
+
+
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        infoWindow.setPosition(pos);
+        infoWindow.setContent('You are here');
+        infoWindow.open(map);
+        map.setCenter(pos);
+      }, function () {
+        handleLocationError(true, infoWindow, map.getCenter());
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+
+
+
+
+
+
+
+
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      infoWindow.setPosition(pos);
+      infoWindow.setContent(browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.');
+      infoWindow.open(map);
+    }
+
+    var request = {
+      query: 'clinic',
+      fields: ['name', 'geometry'],
+    };
+
+    function createMarker(place) {
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+
+      google.maps.event.addListener(marker, 'click', function () {
+        infowindow.setContent(place.name);
+        infowindow.open(map, this);
+      });
+    }
+
+    let service = new google.maps.places.PlacesService(map);
+
+    service.findPlaceFromQuery(request, function (results, status) {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        for (var i = 0; i < results.length; i++) {
+          createMarker(results[i]);
+          console.log(results.length)
+        }
+
+
+      }
+    });
+
+
+
+
+
+  },
+  created() {
+
   }
+
+
+
 }
