@@ -9,7 +9,7 @@
   <title>HIV/AIDS</title>
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
+  <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
   <link rel="stylesheet" href="css/main.css" />
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -19,11 +19,17 @@
   <div id="app">
     <!--Navbar-->
 
-    <nav class="navbar navbar-light navbar-expand-lg  mb-4 sticky-top">
+    <nav class="navbar navbar-light navbar-expand-lg ">
 
       <!-- Navbar brand -->
-      <router-link class="navbar-brand" to="/"><img width="100%" class="img-fluid logo ml-2" src="images/logo.svg"
-          alt="logo" /></router-link>
+     
+      <router-link class="navbar-brand m-2" to="/">
+        ​<picture>
+          <source media="(min-width: 650px)" srcset="images/home_page/logo_desktop.svg" type="image/svg+xml">
+          <img src="images/home_page/logo.svg" class="img-fluid"   alt="logo">
+        </picture>
+        
+          </router-link>
 
       <!-- Collapse button -->
       <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
@@ -82,58 +88,8 @@
     <router-view></router-view>
 
 
-    <footer class="bottom text-center mt-4">
-      <img class="logo-footer img-fluid" src="images/logo_footer.svg" alt="footer logo" />
-      <div class="d-flex justify-content-center social-bottom">
-        <object data="images/footer_youtube.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_twitter.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_snapchat.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_instagram.svg" type="image/svg+xml" class="img-fluid row "></object>
-        <object data="images/footer_facebook.svg" type="image/svg+xml" class="img-fluid row "></object>
-      </div>
-
-      <nav class="navbar  navbar-expand-md justify-content-center mb-4">
-        <div class="navbar ">
-
-          <!-- Links -->
-          <ul class="navbar-nav  ml-lg-auto ml-2">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">HOME </router-link>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" data-toggle="dropdown"
-                role="button">AWARNESS</a>
-              <div class="dropdown-menu dropdown-primary">
-
-                <router-link class="dropdown-item" to="/hiv_basics">HIV/AIDS BASIC </router-link>
-                <router-link class="dropdown-item" to="/living_with_hiv">LIVING WITH HIV</router-link>
-                <router-link class="dropdown-item" to="/stigma">STIGMA</router-link>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">PREVENTION</a>
-
-              <div class="dropdown-menu">
-                <router-link class="dropdown-item" to="/drug_use">DRUG USE</router-link>
-                <router-link class="dropdown-item" to="/safe_sex">SAFE SEX</router-link>
-
-
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">HIV TEST</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-
-      </nav>
-      <div class="d-flex justify-content-around">
-        <p class="line">® HIV 2020. All rights reserved </p>
-        <a href="#" class="row"> Privacy Policy</a>
-      </div>
-
+    <footer class=" text-center mt-4">
+      
     </footer>
     <!-- footer ends -->
 

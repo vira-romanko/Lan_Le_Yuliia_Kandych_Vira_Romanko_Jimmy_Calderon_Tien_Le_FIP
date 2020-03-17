@@ -1,14 +1,20 @@
 //Bootstrap Sass Files
-// @import "../node_modules/bootstrap/scss/bootstrap";
+ @import "../node_modules/bootstrap/scss/bootstrap";
 //Modules
+
 //General Modules
 @import "modules/vars.scss";
 @import "modules/nav.scss";
 @import "modules/footer.scss";
 //Each page
-@import "modules/awarness/main_awarness.scss";
-@import "modules/contact/main_contact.scss";
-@import "modules/home/main_home.scss";
-@import "modules/prevention/main_prevention.scss";
-@import "modules/test/main_test.scss";
+
+@import "modules/main_contact.scss";
+@import "modules/animation_home.scss";
+@import "modules/basic_home";
+@import "modules/hero_home";
+@import "modules/hiv_basics";
+@import "modules/living-with-hiv";
+@import "modules/media_home";
+@import "modules/main_prevention.scss";
+
 
