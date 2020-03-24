@@ -9,13 +9,15 @@ export default {
             <input v-model='password' type="text" name="password" value='' /><br>
 
             <button @click='login' name='submit' type='submit'>Submit</button>
+            {{status}}
             <a href='#/signup'>Sign Up</a>
         </form>
     </div>`,
     data() {
         return {
             username: '',
-            password: ''
+            password: '',
+            status: ''
         }
 
     },
@@ -39,11 +41,12 @@ export default {
                     .then(res => res.json())
                     .then(data => {
                         console.log(data)
+                        this.status = data
                     })
                     .catch(err => console.log(err))
 
             } else {
-                console.log('type in username and password')
+                this.status = 'type in username and password'
             }
 
 
