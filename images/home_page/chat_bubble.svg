@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232.246" height="170.093" viewBox="0 0 232.246 170.093">
+  <g id="we_need_to_talk_bubble" data-name="we need to talk bubble" transform="matrix(1, 0.017, -0.017, 1, 2.62, 37.566)">
+    <path id="chat_bubble" data-name="chat bubble" d="M82.738.267c49.832-2.955,93.731,18.983,98.055,49a35.132,35.132,0,0,1-5.216,23.6l23.465,32.2L155.509,92.211c-14.633,9.192-34.534,15.423-57.109,16.762-49.828,2.955-93.731-18.986-98.055-49S32.909,3.222,82.738.267Z" transform="translate(31.851 -34.974) rotate(16)" fill="none" stroke="#db3131" stroke-width="5"/>
+    <text id="We_need_to_talk_" data-name="We need 
+to talk!" transform="matrix(1, -0.017, 0.017, 1, 95.358, 31.011)" fill="#db3131" font-size="19" font-family="Montserrat-ExtraBold, Montserrat ExtraBold" font-weight="800"><tspan x="-47.87" y="0">We need </tspan><tspan x="-35.749" y="22">to talk!</tspan></text>
+    <g id="Dots" transform="translate(80.143 69.936)">
+      <path id="dot" d="M5.829,2.914A2.914,2.914,0,1,0,2.914,5.829,2.914,2.914,0,0,0,5.829,2.914" transform="translate(13.592 0.001)" fill="#343434"/>
+      <path id="dot-2" d="M5.829,2.915A2.915,2.915,0,1,0,2.914,5.829h0A2.915,2.915,0,0,0,5.829,2.915" transform="translate(26.733 0)" fill="#343434"/>
+      <path id="dot-3" d="M5.826,2.911A2.913,2.913,0,1,0,2.913,5.826,2.913,2.913,0,0,0,5.826,2.911h0" transform="translate(0 0.004)" fill="#343434"/>
+    </g>
+    <path id="Path_12637" data-name="Path 12637" d="M0,3.121a2.918,2.918,0,0,1,5.21-1.885,2.918,2.918,0,0,1,5.3,1.608c.055,2.089-2.931,4.072-4.352,5.439a.866.866,0,0,1-1.151.044C3.383,6.986.064,5.54,0,3.121Z" transform="matrix(0.927, 0.375, -0.375, 0.927, 143.617, 34.723)" fill="#ec4b4b"/>
+  </g>
+</svg>

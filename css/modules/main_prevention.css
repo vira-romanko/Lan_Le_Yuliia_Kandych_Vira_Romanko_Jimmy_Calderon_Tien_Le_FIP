@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&display=swap");
+.know h4 {
+  color: #EC4B4B; }
+
+.know .left-box.drugs h4 {
+  margin-top: 0;
+  padding-top: 20;
+  color: #EC4B4B; }
+
+.condom img {
+  width: 50%;
+  margin: 0 auto; }
+
+.paragraph {
+  font-size: 1rem; }
+
+.honest {
+  background-image: url("/images/safe_sex_red_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; }
+  .honest p {
+    padding: 10px;
+    padding-right: 20px; }
+  .honest .block
+img {
+    position: initial;
+    width: 67px;
+    height: 80px;
+    padding: 4px;
+    margin: 0; }
+
+.red-span span {
+  color: #EC4B4B;
+  display: block; }
+
+.bottom-p {
+  font-weight: bold;
+  color: #EC4B4B;
+  font-size: 1rem; }
