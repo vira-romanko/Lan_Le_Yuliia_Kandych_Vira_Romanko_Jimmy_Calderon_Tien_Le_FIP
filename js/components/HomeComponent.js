@@ -184,6 +184,10 @@ export default {
    
 
   </div>
+  <div id="floating-panel">
+      <input id="address" type="textbox" value="">
+      <input id="submit" type="button" value="Geocode">
+  </div>
   <div id="map"></div>
 </div>
 
@@ -194,8 +198,8 @@ export default {
   data() {
     return {
       articles: null,
-      number:{
-        
+      number: {
+
       }
     }
   },
@@ -207,33 +211,55 @@ export default {
       .then(res => res.json())
       .then(data => this.articles = data.articles)
 
-    var map, infoWindow;
 
-    map = new google.maps.Map(document.getElementById('map'), {
 
-      zoom: 15
+
+
+    //google map api
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: { lat: -34.397, lng: 150.644 }
     });
-    infoWindow = new google.maps.InfoWindow;
+    var geocoder = new google.maps.Geocoder();
+
+    document.getElementById('submit').addEventListener('click', function () {
+      geocodeAddress(geocoder, map);
+    });
 
 
-    // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        var pos = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
+    function geocodeAddress(geocoder, resultsMap) {
+      var address = document.getElementById('address').value;
+      geocoder.geocode({ 'address': address }, function (results, status) {
+        if (status === 'OK') {
+          resultsMap.setCenter(results[0].geometry.location);
+          var marker = new google.maps.Marker({
+            map: resultsMap,
+            position: results[0].geometry.location
+          });
 
-        infoWindow.setPosition(pos);
-        infoWindow.setContent('You are here');
-        infoWindow.open(map);
-        map.setCenter(pos);
-      }, function () {
-        handleLocationError(true, infoWindow, map.getCenter());
+          console.log(results[0].geometry.location)
+          var request = {
+            location: results[0].geometry.location,
+            radius: 1000,
+            query: 'medical center'
+          };
+
+          var service = new google.maps.places.PlacesService(map);
+
+          service.textSearch(request, function (type_results, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              for (var i = 0; i < type_results.length; i++) {
+                createMarker(type_results[i]);
+              }
+
+              map.setCenter(results[0].geometry.location);
+            }
+          });
+
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
       });
-    } else {
-      // Browser doesn't support Geolocation
-      handleLocationError(false, infoWindow, map.getCenter());
     }
 
 
@@ -242,20 +268,6 @@ export default {
 
 
 
-
-
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-      infoWindow.setPosition(pos);
-      infoWindow.setContent(browserHasGeolocation ?
-        'Error: The Geolocation service failed.' :
-        'Error: Your browser doesn\'t support geolocation.');
-      infoWindow.open(map);
-    }
-
-    var request = {
-      query: 'clinic',
-      fields: ['name', 'geometry'],
-    };
 
     function createMarker(place) {
       var marker = new google.maps.Marker({
@@ -268,20 +280,6 @@ export default {
         infowindow.open(map, this);
       });
     }
-
-    let service = new google.maps.places.PlacesService(map);
-
-    service.findPlaceFromQuery(request, function (results, status) {
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-          createMarker(results[i]);
-          console.log(results.length)
-        }
-
-
-      }
-    });
-
 
 
 
