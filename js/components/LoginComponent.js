@@ -1,7 +1,7 @@
 export default {
     template: `
     <div>
-        <form action="./admin/admin_login.php?user=true" method='post'>
+        <form action="" method='post'>
             <label>Username:</label><br>
             <input v-model='username' type="text" name="username" value='' /><br>
 
@@ -24,7 +24,7 @@ export default {
 
     methods: {
         login(e) {
-            e.preventDefault()
+
             if (this.username != "" && this.password != "") {
                 let formData = new FormData();
 
@@ -42,10 +42,14 @@ export default {
                     .then(data => {
                         console.log(data)
                         this.status = data
+
+                        if (this.status == 'login successful') {
+                            window.location.href = "./admin/index.php";
+                        }
                     })
                     .catch(err => console.log(err))
 
-                window.location.href = "./admin/index.php";
+
 
             } else {
                 this.status = 'type in username and password'

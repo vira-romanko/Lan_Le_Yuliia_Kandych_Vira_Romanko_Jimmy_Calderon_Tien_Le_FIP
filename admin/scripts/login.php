@@ -47,7 +47,7 @@ function login($username, $password, $ip)
 
 
         if (isset($id)) {
-            return $_SESSION;
+            return 'login successful';
         } else {
             return 'Wrong pass';
         }

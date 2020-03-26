@@ -171,6 +171,10 @@ export default {
     }
   },
 
+  created() {
+
+  },
+
   mounted() {
     console.log('mounted')
     let url = 'https://newsapi.org/v2/everything?qInTitle=hiv&apiKey=0b89d19105dc493bb2b0465a8152dec8&pageSize=4&sortBy=relevancy&fbclid=IwAR1OBl735Dd52VkjVPhSBe_tdsb6aUCIFx7o6JBmcmrVefni2vJ6NqEmSJs'
