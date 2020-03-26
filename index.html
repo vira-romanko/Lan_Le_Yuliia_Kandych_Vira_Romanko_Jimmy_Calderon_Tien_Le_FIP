@@ -14,22 +14,35 @@
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
+<style>
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 
 <body>
   <div id="app">
     <!--Navbar-->
 
-    <nav class="navbar navbar-light navbar-expand-lg ">
+    <nav class="navbar navbar-light navbar-expand-lg mb-4 sticky-top">
 
       <!-- Navbar brand -->
-     
+
       <router-link class="navbar-brand m-2" to="/">
         ​<picture>
           <source media="(min-width: 650px)" srcset="images/home_page/logo_desktop.svg" type="image/svg+xml">
-          <img src="images/home_page/logo.svg" class="img-fluid"   alt="logo">
+          <img src="images/home_page/logo.svg" class="img-fluid" alt="logo">
         </picture>
-        
-          </router-link>
+
+      </router-link>
 
       <!-- Collapse button -->
       <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
@@ -89,12 +102,15 @@
 
 
     <footer class=" text-center mt-4">
-      
+
     </footer>
     <!-- footer ends -->
 
     <!-- app div ends -->
   </div>
+
+
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -112,6 +128,14 @@
 
 
   </script>
+  <script>
+
+
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmvjGqiTx7GXcS0Ay-sOzrRAFsIrceuyY&libraries=places">
+  </script>
+
+
 </body>
 
 </html>
