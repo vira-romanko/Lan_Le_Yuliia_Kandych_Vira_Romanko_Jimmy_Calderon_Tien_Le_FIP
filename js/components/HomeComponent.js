@@ -1,4 +1,7 @@
+
+
 export default {
+
   template: `
     <div >
     
@@ -129,6 +132,14 @@ export default {
 
 
 
+  </div>
+  <div id="floating-panel">
+      <input id="address" type="textbox" value="">
+      <input id="submit" type="button" value="Geocode">
+  </div>
+  <div id="map"></div>
+</div>
+
 </div>
 
     `,
@@ -136,8 +147,8 @@ export default {
   data() {
     return {
       articles: null,
-      number:{
-        
+      number: {
+
       }
     }
   },
@@ -148,5 +159,85 @@ export default {
     fetch(url)
       .then(res => res.json())
       .then(data => this.articles = data.articles)
+
+
+
+
+
+    //google map api
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: { lat: -34.397, lng: 150.644 }
+    });
+    var geocoder = new google.maps.Geocoder();
+
+    document.getElementById('submit').addEventListener('click', function () {
+      geocodeAddress(geocoder, map);
+    });
+
+
+    function geocodeAddress(geocoder, resultsMap) {
+      var address = document.getElementById('address').value;
+      geocoder.geocode({ 'address': address }, function (results, status) {
+        if (status === 'OK') {
+          resultsMap.setCenter(results[0].geometry.location);
+          var marker = new google.maps.Marker({
+            map: resultsMap,
+            position: results[0].geometry.location
+          });
+
+          console.log(results[0].geometry.location)
+          var request = {
+            location: results[0].geometry.location,
+            radius: 1000,
+            query: 'medical center'
+          };
+
+          var service = new google.maps.places.PlacesService(map);
+
+          service.textSearch(request, function (type_results, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              for (var i = 0; i < type_results.length; i++) {
+                createMarker(type_results[i]);
+              }
+
+              map.setCenter(results[0].geometry.location);
+            }
+          });
+
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+    }
+
+
+
+
+
+
+
+
+    function createMarker(place) {
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+
+      google.maps.event.addListener(marker, 'click', function () {
+        infowindow.setContent(place.name);
+        infowindow.open(map, this);
+      });
+    }
+
+
+
+
+  },
+  created() {
+
   }
+
+
+
 }

@@ -20,6 +20,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
+    "google-maps": "^4.2.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "jquery": "^3.4.1",

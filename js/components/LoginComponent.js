@@ -8,7 +8,7 @@ export default {
             <label>Password:</label><br>
             <input v-model='password' type="text" name="password" value='' /><br>
 
-            <button @click='login' name='submit' type='submit'>Submit</button>
+            <button @click.prevent="login" name='submit' type='submit'>Submit</button>
             {{status}}
             <a href='#/signup'>Sign Up</a>
         </form>
@@ -44,6 +44,8 @@ export default {
                         this.status = data
                     })
                     .catch(err => console.log(err))
+
+                window.location.href = "./admin/index.php";
 
             } else {
                 this.status = 'type in username and password'

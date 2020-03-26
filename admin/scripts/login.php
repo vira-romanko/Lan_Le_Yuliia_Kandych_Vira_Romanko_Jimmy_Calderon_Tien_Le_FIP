@@ -73,5 +73,5 @@ function confirm_logged_in()
 function logOut()
 {
     session_destroy();
-    redirect_to('admin_login.php');
+    redirect_to('../#/login');
 }

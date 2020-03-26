@@ -7173,6 +7173,291 @@ footer {
     color: #c92c32;
     transition: 600ms cubic-bezier(0.99, 0, 0.57, 0.94); }
 
+<<<<<<< HEAD
+li, p, ul, a {
+  font-size: 16px;
+  list-style-type: none; }
+
+.connection {
+  position: relative; }
+  .connection img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .connection h4 {
+    margin-left: 80px;
+    color: #FF0000;
+    font-weight: bold; }
+  .connection p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px; }
+
+.red-bg-living {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .red-bg-living img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .red-bg-living p {
+    padding: 40px;
+    margin: 25px;
+    text-align: center;
+    color: white; }
+
+.char-living img {
+  max-width: 70%; }
+
+@media (min-width: 768px) {
+  .red-bg-living p {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 80px; } }
+
+@media (min-width: 992px) {
+  .connection h4 {
+    margin-left: 80px;
+    color: #FF0000;
+    padding-top: 100px;
+    font-size: 2rem; }
+  .connection p {
+    padding-top: 50px;
+    text-align: center;
+    font-size: initial; }
+  .red-bg-living p {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    text-align: center; }
+  .char-living img {
+    max-width: 30%; } }
+
+.hero-basic {
+  position: relative; }
+
+.red-box-basic {
+  position: relative;
+  color: #fff; }
+  .red-box-basic img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .red-box-basic p {
+    padding: 60px 45px 60px 45px;
+    margin: 25px;
+    text-align: center; }
+
+.blue-bg-basic {
+  margin: 0px;
+  position: relative; }
+  .blue-bg-basic img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .blue-bg-basic h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem; }
+  .blue-bg-basic p {
+    padding: 40px;
+    margin: 0 50px 0px 50px;
+    text-align: center;
+    color: white; }
+
+.hiv-aids img {
+  max-width: 50%; }
+
+@media (min-width: 768px) {
+  .red-box-basic p {
+    padding: 50px;
+    margin: 60px;
+    font-size: 1rem; }
+  .youth img {
+    max-width: 300px; }
+  .blue-bg-basic p {
+    padding-left: 96px;
+    padding-right: 96px;
+    margin: 0 50px 0px 50px;
+    text-align: center;
+    color: white; } }
+
+@media (min-width: 992px) {
+  .red-box-basic p {
+    padding: 80px;
+    margin: 80px; }
+  .blue-bg-basic h4 {
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.3rem; }
+  .blue-bg-basic p {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    text-align: center;
+    color: white; } }
+
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif; }
+
+.main-title {
+  text-align: center;
+  font-weight: bold;
+  color: red; }
+
+.red-box-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.red-bg {
+  margin: 0px;
+  position: relative; }
+  .red-bg img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .red-bg h4 {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem; }
+  .red-bg p {
+    text-align: center;
+    color: white; }
+
+.news {
+  margin-top: 20px; }
+  .news .news-img {
+    width: 80%;
+    object-fit: cover;
+    height: 60%; }
+  .news .subtitle {
+    color: red;
+    font-size: 20px; }
+
+.box-bg {
+  position: relative; }
+  .box-bg img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .box-bg h4 {
+    margin-top: 20px;
+    padding-top: 80px;
+    top: 0;
+    margin-left: 20px;
+    font-weight: bold; }
+  .box-bg p {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 60px;
+    text-align: left;
+    font-size: 12px;
+    color: #2B2B2B; }
+  .box-bg .link-test {
+    margin-bottom: 160px; }
+    .box-bg .link-test a {
+      z-index: 2;
+      padding: 10px;
+      text-align: center;
+      background-color: red;
+      border-radius: 21px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none; }
+
+.box-blue-bg {
+  margin-top: 50px;
+  padding: 20px;
+  position: relative; }
+  .box-blue-bg img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .box-blue-bg h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 10px; }
+  .box-blue-bg p {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin: 0px 20px 0px 20px; }
+  .box-blue-bg .link-protect a {
+    margin: 20px;
+    z-index: 2;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 21px;
+    cursor: pointer;
+    color: red;
+    text-decoration: none; }
+
+.black-box {
+  position: relative; }
+  .black-box img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+
+.know p {
+  text-align: center; }
+
+.know .left-box h4 {
+  margin-left: 80px;
+  padding-top: 100px; }
+
+.know .left-box p {
+  padding-top: 0px 50px 0px 50px;
+  text-align: center; }
+
+=======
+>>>>>>> master
 a:active {
   outline: none; }
 
@@ -7438,6 +7723,19 @@ body {
   margin: 0 auto;
   min-height: 230px;
   background-color: white; }
+<<<<<<< HEAD
+  .jumbotron object {
+    max-width: 40%;
+    align-self: center;
+    margin-top: -30px; }
+  .jumbotron .characters .chr-box {
+    margin: 0;
+    padding: 0; }
+  .jumbotron .social {
+    height: 50px; }
+    .jumbotron .social object {
+      max-width: 100%; }
+=======
   .know::before {
     content: "";
     position: absolute;
@@ -7569,6 +7867,7 @@ li, p, ul, a {
     text-align: center; }
   .char-living img {
     max-width: 30%; } }
+>>>>>>> master
 
 html {
   font-size: 1rem; }

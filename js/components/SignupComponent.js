@@ -35,10 +35,10 @@ export default {
             if (this.username != "" && this.password != "") {
                 let formData = new FormData();
 
-                formData.append('fname', this.username)
+                formData.append('fname', this.fname)
                 formData.append('username', this.username)
-                formData.append('password', this.username)
-                formData.append('email', this.password)
+                formData.append('password', this.password)
+                formData.append('email', this.email)
 
 
                 let url = './admin/admin_createuser.php';
