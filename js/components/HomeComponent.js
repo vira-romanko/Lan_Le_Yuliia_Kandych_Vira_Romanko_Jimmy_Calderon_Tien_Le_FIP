@@ -159,6 +159,22 @@ export default {
     <input id="submit" type="button" value="Geocode">
   </div>
   <div id="map"></div>
+
+  <div class="news">
+  <h2 class=" display-4 main-title text-center mt-5">LATEST NEWS</h2>
+  <div class="row justify-content-center m-4">
+    <div  class="text-center p-3 col-12 col-lg-6"  v-for="article in articles">
+      <a :href='article.url'>
+        <img class="img-fluid news-img" :src='article.urlToImage' alt="news icon" />
+        <h4 class="subtitle text-center">{{article.title}}</h4>
+        <p>{{article.publishedAt}}</p>  
+      </a>      
+    </div>
+  </div>
+    
+
+
+</div>
 </div>
 
     `,
@@ -173,7 +189,7 @@ export default {
   },
 
   created() {
-    console.log('json')
+
     fetch('./admin/admin_editinfo.php?json=true')
       .then(res => res.json())
       .then(data => this.number = data.info)
@@ -236,13 +252,6 @@ export default {
         }
       });
     }
-
-
-
-
-
-
-
 
     function createMarker(place) {
       var marker = new google.maps.Marker({
