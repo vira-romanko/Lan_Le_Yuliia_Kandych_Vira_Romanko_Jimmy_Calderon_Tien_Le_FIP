@@ -90,25 +90,9 @@ export default {
 
   <h1 class="title text-center m-4">HIV NUMBERS</h1>
   <div class="numbers  row">
-    <div class="col-md-3">
-      <h3>{{number[0].value}}</h3>
-      <p> people were accessing
-        antiretroviral therapy
-      </p>
-    </div>
-
-    <div class="col-md-3">
-      <h3>{{number[1].value}}</h3>
-      <p> people became newly
-        Infected with HIV
-      </p>
-    </div>
-    <div class="col-md-3">
-      <h3>{{number[2].value}}</h3>
-      <p> people globally were
-        living with HIV
-
-      </p>
+    <div v-for="number in numbers" class="col-md-3">
+      <h3>{{number.value}}</h3>
+      <p>{{number.description}}</p>
     </div>
   </div>
 
@@ -182,18 +166,12 @@ export default {
   data() {
     return {
       articles: null,
-      number: {
+      numbers: {
 
       }
     }
   },
 
-  created() {
-
-    fetch('./admin/admin_editinfo.php?json=true')
-      .then(res => res.json())
-      .then(data => this.number = data.info)
-  },
 
   mounted() {
     console.log('mounted')
@@ -202,6 +180,10 @@ export default {
       .then(res => res.json())
       .then(data => this.articles = data.articles)
 
+
+    fetch('./admin/admin_editinfo.php?json=true')
+      .then(res => res.json())
+      .then(data => this.numbers = data.info)
 
 
 
