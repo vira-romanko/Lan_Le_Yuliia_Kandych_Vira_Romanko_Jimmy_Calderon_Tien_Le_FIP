@@ -14,19 +14,7 @@
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
-<style>
-  #map {
-    height: 300px;
-    width: 100%;
-  }
 
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-</style>
 
 <body>
   <div id="app">
@@ -97,6 +85,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACT</a>
           </li>
+          </ul>
 
     </nav>
 
@@ -105,6 +94,58 @@
 
 
     <footer class=" text-center mt-4">
+
+      <router-link class="navbar-brand m-2" to="/">
+       
+          <img  class="img-fluid" src="images/logo_footer.svg" class="img-fluid" alt="logo">
+        </router-link>
+          <div class="d-flex justify-content-center social-bottom">
+            <object data="images/footer_youtube.svg" type="image/svg+xml" class="img-fluid row "></object>
+            <object data="images/footer_twitter.svg" type="image/svg+xml" class="img-fluid row "></object>
+            <object data="images/footer_snapchat.svg" type="image/svg+xml" class="img-fluid row "></object>
+            <object data="images/footer_instagram.svg" type="image/svg+xml" class="img-fluid row "></object>
+            <object data="images/footer_facebook.svg" type="image/svg+xml" class="img-fluid row "></object>
+          </div>
+          <nav class="d-flex justify-content-center  text-center">
+            <ul class="d-flex row text-center ">
+              <li class="nav-item ">
+                <router-link class="nav-link" to="/">HOME </router-link>
+              </li>
+              <div class="col">
+
+              <li> <router-link class="nav-link" to="/hiv_basics">HIV/AIDS BASIC </router-link></li>
+             <li><router-link  class="nav-link" to="/living_with_hiv">LIVING WITH HIV</router-link></li> 
+             <li><router-link class="nav-link" to="/stigma">STIGMA</router-link></li> 
+
+              </div>
+
+              
+
+              <div>
+              <li><router-link  class="nav-link"  to="/drug_use">DRUG USE</router-link></li>  
+               <li><router-link    class="nav-link" to="/safe_sex">SAFE SEX</router-link></li> 
+
+
+              </div>
+              <li class="nav-item">
+                <router-link  class="nav-link"  to="/drug_use">HIV TEST</router-link>
+              </li>
+  
+              <li class="nav-item">
+                <router-link  class="nav-link"  to="/drug_use">CONTACT</router-link>
+              </li>
+
+
+             
+            </ul>
+
+          </nav>
+
+          <p class="text-center m-0">® teen talks 2020. All rights reserved</p>
+
+        
+
+     
 
     </footer>
     <!-- footer ends -->

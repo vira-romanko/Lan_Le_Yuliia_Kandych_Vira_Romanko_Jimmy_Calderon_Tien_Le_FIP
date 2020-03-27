@@ -1,6 +1,11 @@
-
+#app{
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+}
 nav{
-    background-color: $bg;
+    background-color:$bg;
+    width: auto;
     .first-button{
         outline: none;
         border:0;
