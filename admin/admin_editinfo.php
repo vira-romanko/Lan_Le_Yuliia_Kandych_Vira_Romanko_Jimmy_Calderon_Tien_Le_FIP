@@ -4,6 +4,17 @@ confirm_logged_in();
 
 $get_info = getInfo();
 
+$result = array('info' => array());
+
+if (isset($_GET['json'])) {
+    while ($row = $get_info->fetch(PDO::FETCH_ASSOC)) {
+        $single = $row;
+        $results = array_push($result['info'], $single);
+    }
+
+    echo json_encode($result, JSON_PRETTY_PRINT);
+}
+
 if (isset($_POST['submit'])) {
     $infos = array(
         'antiretroviral_therapy' => $_POST['antiretroviral_therapy'],
@@ -16,28 +27,32 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
+<?php if (!isset($_GET['json'])) : ?>
+    <!DOCTYPE html>
+    <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Info</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Info</title>
-</head>
+    <body>
 
-<body>
-    <h1>Edit Info</h1>
-    <?php echo !empty($message) ? $message : ''; ?>
-    <form action="admin_editinfo.php" method='POST'>
-        <?php while ($row = $get_info->fetch(PDO::FETCH_ASSOC)) : ?>
+        <h1>Edit Info</h1>
+        <?php echo !empty($message) ? $message : ''; ?>
+        <form action="admin_editinfo.php" method='POST'>
+            <?php while ($row = $get_info->fetch(PDO::FETCH_ASSOC)) : ?>
 
-            <label><?php echo $row['name'] ?></label>
-            <input type='text' name='<?php echo trim($row['name']); ?>' value='<?php echo $row['value'] ?>'><br>
-        <?php endwhile;
-        ?>
-        <button type="submit" name="submit">Edit Info</button>
-    </form>
-</body>
+                <label><?php echo $row['name'] ?></label>
+                <input type='text' name='<?php echo trim($row['name']); ?>' value='<?php echo $row['value'] ?>'><br>
+            <?php endwhile;
+            ?>
+            <button type="submit" name="submit">Edit Info</button>
+        </form>
 
-</html>
+    </body>
+
+    </html>
+
+<?php endif; ?>

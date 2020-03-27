@@ -3,7 +3,8 @@
 export default {
 
   template: `
-  <div>
+<div>
+  
 
   <div class="col  text-center ">
     <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel">
@@ -90,20 +91,20 @@ export default {
   <h1 class="title text-center m-4">HIV NUMBERS</h1>
   <div class="numbers  row">
     <div class="col-md-3">
-      <h3>24 500 000</h3>
+      <h3>{{number[0].value}}</h3>
       <p> people were accessing
         antiretroviral therapy
       </p>
     </div>
 
     <div class="col-md-3">
-      <h3>17 000 000 </h3>
+      <h3>{{number[1].value}}</h3>
       <p> people became newly
         Infected with HIV
       </p>
     </div>
     <div class="col-md-3">
-      <h3>37 900 000 </h3>
+      <h3>{{number[2].value}}</h3>
       <p> people globally were
         living with HIV
 
@@ -199,6 +200,7 @@ export default {
 <input id="submit" type="button" value="Go!">
 </div>
   <div id="map"></div>
+
   <div class="hover-div text-center p-3">
    <h4>Find a clinic near you </h4>
    <h4>Anonymous HIV/AIDS Testing </h4>
@@ -222,6 +224,7 @@ export default {
         
     
     </div>
+
 </div>
 </div>
 
@@ -238,6 +241,9 @@ export default {
 
   created() {
 
+    fetch('./admin/admin_editinfo.php?json=true')
+      .then(res => res.json())
+      .then(data => this.number = data.info)
   },
 
   mounted() {
@@ -298,13 +304,6 @@ export default {
       });
     }
 
-
-
-
-
-
-
-
     function createMarker(place) {
       var marker = new google.maps.Marker({
         map: map,
@@ -320,10 +319,8 @@ export default {
 
 
 
-  },
-  created() {
-
   }
+
 
 
 
