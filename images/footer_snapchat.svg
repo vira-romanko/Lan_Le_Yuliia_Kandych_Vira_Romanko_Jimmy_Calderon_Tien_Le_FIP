@@ -1,10 +1,10 @@
 <svg id="snapchat" data-name="021-snapchat" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 37.282 34.953">
 <style type="text/css">
-	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#B9B9B9;}
 
   #snapchat:hover .st4{
     cursor:pointer !important;
-    fill:#c92c32!important;
+    fill:#EC4B4B!important;
     transition: 600ms cubic-bezier(.99,0,.57,.94) !important;
   
  

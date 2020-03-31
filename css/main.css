@@ -7590,6 +7590,96 @@ body {
       background-color: rgba(39, 44, 49, 0.15);
       filter: blur(5px); }
 
+.jumbotron {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px; }
+  .jumbotron img {
+    z-index: -1; }
+  .jumbotron object {
+    margin: 10px; }
+
+.hero-basic {
+  position: relative; }
+
+.transmittion {
+  position: relative; }
+  .transmittion img {
+    position: absolute;
+    z-index: -1; }
+
+.red-box-basic {
+  position: relative;
+  color: white; }
+  .red-box-basic img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .red-box-basic p {
+    padding: 60px 45px 60px 45px;
+    margin: 25px;
+    text-align: center; }
+
+.blue-bg-basic {
+  margin: 0px;
+  position: relative; }
+  .blue-bg-basic img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+    top: 0; }
+  .blue-bg-basic h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem; }
+  .blue-bg-basic p {
+    padding: 40px;
+    margin: 0 50px 0px 50px;
+    text-align: center;
+    color: white; }
+
+.hiv-aids img {
+  max-width: 50%; }
+
+@media (min-width: 768px) {
+  .red-box-basic p {
+    padding: 50px;
+    margin: 60px;
+    font-size: 1rem; }
+  .youth img {
+    max-width: 300px; }
+  .blue-bg-basic p {
+    padding-left: 96px;
+    padding-right: 96px;
+    margin: 0 50px 0px 50px;
+    text-align: center;
+    color: white; } }
+
+@media (min-width: 992px) {
+  .red-box-basic p {
+    padding: 80px;
+    margin: 80px; }
+  .blue-bg-basic h4 {
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.3rem; }
+  .blue-bg-basic p {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    text-align: center;
+    color: white; } }
+
 li, p, ul, a {
   font-size: 16px;
   list-style-type: none; }
