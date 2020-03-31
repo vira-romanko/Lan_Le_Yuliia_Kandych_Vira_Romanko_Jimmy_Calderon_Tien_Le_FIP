@@ -7353,7 +7353,7 @@ a:active {
   transition: all .5s; }
 
 .btn-red {
-  background: #EC4B4B;
+  background: #457AB0;
   color: white; }
 
 .btn:hover {
@@ -7380,7 +7380,7 @@ a:active {
   transition: all .5s; }
 
 .btn-red::after {
-  background: #EC4B4B; }
+  background: #457AB0; }
 
 .btn-animation-1:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -7852,6 +7852,11 @@ html {
   .black-box object {
     width: 26%; } }
 
+.drugs-subtitle {
+  color: #EC4B4B;
+  font-weight: 200;
+  font-size: 20px; }
+
 .know h4 {
   color: #EC4B4B; }
 
@@ -7868,18 +7873,16 @@ html {
   font-size: 1rem; }
 
 .honest {
-  background-image: url("/images/safe_sex_red_bg.svg");
-  background-size: cover;
+  background-image: url("/images/bg_blue.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  color: white; }
+  color: #2B2B2B; }
   .honest p {
-    padding: 10px;
-    padding-right: 20px; }
+    padding: 10px; }
   .honest .block img {
     position: initial;
-    width: 67px;
-    height: 80px;
-    padding: 4px;
+    width: 20px;
+    height: 40px;
     margin: 0; }
 
 .red-span span {
@@ -7890,3 +7893,7 @@ html {
   font-weight: bold;
   color: #EC4B4B;
   font-size: 1rem; }
+
+.conversations {
+  font-size: 2rem;
+  margin-top: 30px; }
