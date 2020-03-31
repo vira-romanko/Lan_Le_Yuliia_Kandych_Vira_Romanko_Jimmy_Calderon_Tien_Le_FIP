@@ -1,10 +1,10 @@
 <svg id="youtube" data-name="002-youtube" xmlns="http://www.w3.org/2000/svg" width="30"  viewBox="0 0 37.284 25.632">
 <style type="text/css">
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#B9B9B9;}
 
   #youtube:hover .st2{
     cursor:pointer !important;
-    fill:#c92c32!important;
+    fill:#EC4B4B!important;
     transition: 600ms cubic-bezier(.99,0,.57,.94) !important;
   
  
