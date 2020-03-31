@@ -230,7 +230,7 @@ a:active{
 }
 
 .btn-red{
-  background: $red;
+  background: $blue;
   color:$white;
 }
 
@@ -267,7 +267,7 @@ a:active{
 }
 
 .btn-red::after {
-    background:$red;
+    background:$blue;
 }
 
 .btn-animation-1:hover::after {
