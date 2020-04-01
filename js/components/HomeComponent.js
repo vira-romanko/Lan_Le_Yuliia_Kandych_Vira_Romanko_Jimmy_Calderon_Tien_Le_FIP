@@ -134,29 +134,80 @@ export default {
 
   </div>
 
+  
+      <div class="protect d-flex row">
+      
+       <img class="img-fluid bg-img mb-3 " src="images/protect_yourself.svg" alt="bg_image"/>
+       <h1 class="title col text-center m-4">PROTECT YOURSELF</h1>
+       <div class="d-flex row ">
+       
+       <div class="col-md-6 align-middle">
+       <p class="p-5 align-items-center">Protecting yourself from HIV begins with 
+       understanding how the virus is spread. 
+       The virus can be passed in only certain ways: 
+       During sex with a person infected with HIV; 
+       By sharing a contaminated needle, such as 
+       through illicit drug use …</p>
+       <div class="row d-flex justify-content-center ">
+       <button class="blue-btn mr-3">
+          <router-link class="router-link" to="/safe_sex">Safe sex</router-link>
+        </button>
+        <button class="blue-btn">
+        <router-link class="router-link" to="/safe_drug_use">Safe drug use</router-link>
+      </button>
+      
+      </div>
+      
+       </div>
+       <img class="img-fluid col-md-6 flex-sm-column-reverse" src="images/protect_yourself_2.png" alt="people"/>
+      
+      </div>
+      </div>
 
 
+      <div class="hiv-test text-center ">
+      <h1 class="title text-center m-4 p-4">UP TO TEST?</h1>
+      <h2>What is an HIV test?</h2>
+       <p class="text-center p-4"> The HIV test is a blood test. There are two ways this test can be done.
+       Rapid tests, also known as “point-of-care” tests, offer results within minutes after blood is taken, usually from a fingerprick.
+       Standard tests usually involve blood being taken from a vein in the arm. The blood is then sent to a lab for testing. The results take two weeks… </p>
+       <button class="blue-btn">
+        <router-link class="router-link" to="/safe_drug_use">More info</router-link>
+      </button>
 
+      </div>
 
-  <div id="floating-panel">
-    <input id="address" type="textbox" value="">
-    <input id="submit" type="button" value="Geocode">
-  </div>
+<div class="clinick-map">
+<h1 class="title text-center m-4 p-4">WHERE TO GO?</h1>
+<div id="floating-panel" class="text-center mb-4">
+<input id="address" type="textbox" value="" placeholder="City or postal code">
+<input id="submit" type="button" value="Go!">
+</div>
   <div id="map"></div>
 
-  <div class="news">
-  <h2 class=" display-4 main-title text-center mt-5">LATEST NEWS</h2>
-  <div class="row justify-content-center m-4">
-    <div  class="text-center p-3 col-12 col-lg-6"  v-for="article in articles">
-      <a :href='article.url'>
-        <img class="img-fluid news-img" :src='article.urlToImage' alt="news icon" />
-        <h4 class="subtitle text-center">{{article.title}}</h4>
-        <p>{{article.publishedAt}}</p>  
-      </a>      
-    </div>
-  </div>
-    
+  <div class="hover-div text-center p-3">
+   <h4>Find a clinic near you </h4>
+   <h4>Anonymous HIV/AIDS Testing </h4>
+  <div>
 
+</div>
+</div>
+
+<div class="news">
+<h1 class="title text-center m-4 p-4">LATEST NEWS</h1>
+
+      <div class="row justify-content-center m-4">
+        <div  class="text-center p-3 col-12 col-lg-6"  v-for="article in articles">
+          <a :href='article.url'>
+            <img class="img-fluid  news-img" :src='article.urlToImage' alt="news icon" />
+            <h4 class="subtitle text-center">{{article.title}}</h4>
+            <p>{{article.publishedAt}}</p>  
+          </a>      
+        </div>
+      </div>
+        
+    
+    </div>
 
 </div>
 </div>
