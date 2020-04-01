@@ -10,7 +10,7 @@ export default {
     <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
 
-        <div class="carousel-item active text-center p-4 ">
+        <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
 
           ​<picture>
             <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
@@ -19,8 +19,8 @@ export default {
           </picture>
 
 
-          <img class="img-fluid col-md-8 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
-          <div class="col-md-6 m-1">
+          <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
+          <div class="col-md-5 px-3">
             <h3>LIVING WITH HIV/AIDS</h3>
             <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
               have to disclose your status to family, friends, or healthcare
@@ -33,47 +33,50 @@ export default {
 
         </div>
 
-        <div class="carousel-item text-center p-4">
-          ​<picture>
-            <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
-              type="image/svg+xml">
-            <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
-          </picture>
+        <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
+
+        ​<picture>
+          <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
+            type="image/svg+xml">
+          <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
+        </picture>
 
 
-          <img class="img-fluid col-md-8 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
-          <div class="col-md-6 m-1">
-            <h3>LIVING WITH HIV/AIDS</h3>
-            <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
-              have to disclose your status to family, friends, or healthcare
-              providers outside of your HIV healthcare provider. </p>
-            <button class="blue-btn">
-              <router-link class="router-link" to="/living_with_hiv">More info</router-link>
-            </button>
-          </div>
-
-
+        <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
+        <div class="col-md-5 px-3">
+          <h3>LIVING WITH HIV/AIDS</h3>
+          <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
+            have to disclose your status to family, friends, or healthcare
+            providers outside of your HIV healthcare provider. </p>
+          <button class="blue-btn">
+            <router-link class="router-link" to="/living_with_hiv">More info</router-link>
+          </button>
         </div>
-        <div class="carousel-item text-center p-4">
-          ​<picture>
-            <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
-              type="image/svg+xml">
-            <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
-          </picture>
 
 
-          <img class="img-fluid col-md-8 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
-          <div class="col-md-6 text m-1">
-            <h3>LIVING WITH HIV/AIDS</h3>
-            <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
-              have to disclose your status to family, friends, or healthcare
-              providers outside of your HIV healthcare provider. </p>
-            <button class="blue-btn">
-              <router-link class="router-link" to="/living_with_hiv">More info</router-link>
-            </button>
-          </div>
+      </div>
+      <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
 
-        </div>
+      ​<picture>
+        <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
+          type="image/svg+xml">
+        <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
+      </picture>
+
+
+      <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
+      <div class="col-md-5 px-3">
+        <h3>LIVING WITH HIV/AIDS</h3>
+        <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
+          have to disclose your status to family, friends, or healthcare
+          providers outside of your HIV healthcare provider. </p>
+        <button class="blue-btn">
+          <router-link class="router-link" to="/living_with_hiv">More info</router-link>
+        </button>
+      </div>
+
+
+    </div>
         <div class="carousel-indicators">
           <img data-target="#client-testimonial-carousel" data-slide-to="0" class="active m-2"
             src="images/home_page/slide_dot_bold.svg" />
