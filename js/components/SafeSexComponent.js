@@ -39,7 +39,7 @@ export default {
          
 
       </div>
-      <img class="col-lg-6 col-sm-4" src="images/safe_sex_img_4.svg" alt="character">
+      <img class="col-lg-6 " src="images/safe_sex_img_4.svg" alt="character">
       
   </div>
 
