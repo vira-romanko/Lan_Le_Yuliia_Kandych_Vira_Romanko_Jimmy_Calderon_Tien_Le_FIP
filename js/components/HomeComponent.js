@@ -33,7 +33,7 @@ export default {
 
         </div>
 
-        <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
+        <div class="carousel-item  text-center p-4 row flex-row-reverse align-items-end">
 
         ​<picture>
           <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
@@ -55,7 +55,7 @@ export default {
 
 
       </div>
-      <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
+      <div class="carousel-item text-center p-4 row flex-row-reverse align-items-end">
 
       ​<picture>
         <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
