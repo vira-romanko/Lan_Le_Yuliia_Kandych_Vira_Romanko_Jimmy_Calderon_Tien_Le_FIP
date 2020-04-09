@@ -36,10 +36,10 @@ export default {
 
         <div>
         
-        <div  class="d-flex row hiv-test text-center pl-4 pr-4 pb-4">
+        <div  class="d-block  hiv-test text-center pl-4 pr-4 pb-4">
     
         <h1 class="title text-center m-4 p-4">LIVING WITH HIV</h1>
-        <h2 class="text-center col">Connection</h2>
+        <h2 class="text-center">Connection</h2>
             <p>No matter who you are or where you are in your life, you deserve support, 
             care, respect, information, and access to treatment. There may be services 
             near your area; visit the link to connect with people for regional support.
