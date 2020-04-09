@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 09, 2020 at 04:06 AM
+-- Generation Time: Apr 09, 2020 at 09:12 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -31,7 +31,7 @@ CREATE TABLE `tbl_info` (
   `image` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
   `value` varchar(50) NOT NULL,
-  `description` varchar(100) NOT NULL
+  `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -39,9 +39,9 @@ CREATE TABLE `tbl_info` (
 --
 
 INSERT INTO `tbl_info` (`info_id`, `image`, `name`, `value`, `description`) VALUES
-(1, '17a705f29a8aa0541d9a20178d78fde1.jpg', 'antiretroviral_therapy', '2 500 000', 'people were accessing antiretroviral therapy'),
-(2, 'd6a15ce6b7ffc2b2ccfc5953bcacc58b.jpg', 'newly_infected', '17 000 000', 'people became newly Infected with HIV'),
-(3, '2572c6879279918769f73bdbc59781d2.jpg', 'global', '37 900 000', 'people globally were living with HIV ');
+(1, 'hero_home_1.jpg', 'LIVING WITH HIV/AIDS', '2 500 000', 'Telling someone you have HIV is your decision. You don’t have to disclose \r\nyour status to family, friends, or healthcare providers outside of your HIV \r\nhealthcare provider. '),
+(2, 'hero_home_2.jpg', 'COVER YOUR LOVER', '17 000 000', 'Using condoms correctly and consistently each time you have sex greatly reduces the risk of passing or getting HIV. Did you know there are two kinds of condoms?'),
+(3, 'hero_home_3.jpg', 'DO NOT AFRAID \r\nTO KNOW', '37 900 000', 'It’s important that every young person feels empowered and informed about the decisions they’re making that affect their health and overall well-being.');
 
 -- --------------------------------------------------------
 
