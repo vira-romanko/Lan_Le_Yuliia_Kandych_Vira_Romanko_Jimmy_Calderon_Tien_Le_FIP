@@ -38,7 +38,7 @@ export default {
         
         <div  class="d-flex row hiv-test text-center pl-4 pr-4 pb-4">
     
-        <h1 class="title text-center m-4 p-4">HIV/AIDS BASICS</h1>
+        <h1 class="title text-center  p-4">HIV/AIDS BASICS</h1>
             <p>AIDS has been one of the most destructive pandemics in the history of humankind. More than 35 million people have died of AIDS-related illnesses. There are an estimated 36 million people currently living with HIV globally. Those who live with HIV additionally carry the burden of stigma.</p>
         </div>
 
