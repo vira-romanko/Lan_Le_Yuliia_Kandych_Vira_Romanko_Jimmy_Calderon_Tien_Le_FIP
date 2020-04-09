@@ -7182,6 +7182,45 @@ footer {
   footer p {
     color: white; }
 
+.support {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+.contactForm {
+  margin: 0 auto; }
+  .contactForm button {
+    display: flex;
+    margin: 0 auto; }
+  .contactForm::placeholder {
+    font-size: 18px;
+    opacity: 0.5;
+    padding: 10px 20px; }
+  .contactForm form {
+    padding: 60px 20px; }
+  .contactForm .formColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+  .contactForm input,
+  .contactForm textarea {
+    margin: 0px 0px 40px 0px;
+    border: solid 1px #457AB0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #2B2B2B;
+    font-size: 18px;
+    flex: 1;
+    padding: 10px;
+    outline: none; }
+  .contactForm textarea {
+    margin: 0px 0px 0px 0px;
+    height: 300px;
+    width: 120%;
+    box-sizing: border-box; }
+  .contactForm input:active {
+    outline: none; }
+
 a:active {
   outline: none; }
 
@@ -7401,6 +7440,11 @@ body {
     outline: none; }
     body input:active {
       outline: none; }
+  body html, body body {
+    overflow-x: hidden; }
+  body .btn:focus, body .btn:active {
+    outline: none !important;
+    box-shadow: none; }
   body button {
     padding: 10px 40px 10px 40px;
     margin-bottom: 30px;
@@ -7424,7 +7468,6 @@ body {
     position: absolute; }
 
 .hiv-test {
-  width: 70%;
   margin: 0 auto; }
 
 #floating-panel #address {
@@ -7485,6 +7528,17 @@ body {
   margin-top: 30px; }
   .carousel-indicators img {
     margin: 0 auto; }
+
+.hero-img-talk {
+  margin-top: 100px; }
+  .hero-img-talk picture {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 20%;
+    width: 30vw; }
+  .hero-img-talk h3 {
+    font-weight: bold; }
 
 .carousel-item {
   margin-top: 100px; }
@@ -7902,3 +7956,7 @@ html {
 .conversations {
   font-size: 2rem;
   margin-top: 30px; }
+
+@media (min-width: 992px) {
+  .hiv-test.hiv-box {
+    width: 100%; } }
