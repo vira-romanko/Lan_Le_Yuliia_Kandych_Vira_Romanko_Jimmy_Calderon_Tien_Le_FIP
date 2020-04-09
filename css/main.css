@@ -7401,6 +7401,11 @@ body {
     outline: none; }
     body input:active {
       outline: none; }
+  body html, body body {
+    overflow-x: hidden; }
+  body .btn:focus, body .btn:active {
+    outline: none !important;
+    box-shadow: none; }
   body button {
     padding: 10px 40px 10px 40px;
     margin-bottom: 30px;
@@ -7424,7 +7429,6 @@ body {
     position: absolute; }
 
 .hiv-test {
-  width: 70%;
   margin: 0 auto; }
 
 #floating-panel #address {
@@ -7485,6 +7489,17 @@ body {
   margin-top: 30px; }
   .carousel-indicators img {
     margin: 0 auto; }
+
+.hero-img-talk {
+  margin-top: 100px; }
+  .hero-img-talk picture {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 20%;
+    width: 30vw; }
+  .hero-img-talk h3 {
+    font-weight: bold; }
 
 .carousel-item {
   margin-top: 100px; }
@@ -7902,3 +7917,7 @@ html {
 .conversations {
   font-size: 2rem;
   margin-top: 30px; }
+
+@media (min-width: 992px) {
+  .hiv-test.hiv-box {
+    width: 100%; } }

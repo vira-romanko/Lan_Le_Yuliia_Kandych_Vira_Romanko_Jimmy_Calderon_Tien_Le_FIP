@@ -1,28 +1,36 @@
 export default {
     template: `
     <div>
+    <div class="jumbotron text-center hero-basic">
+    <div class="hero-img-talk text-center p-4 row flex-row-reverse align-items-end">
 
-    <div class="jumbotron text-center">
-    <div class="d-felx row">
-    <img class="img-fluid col-md-5" src="images/home_page/chat_bubble.svg" alt="hero_hiv_basic"/>
-    <img class="img-fluid col-md-7 basic-hero" src="images/hiv_basic_hero.png" alt="hero_hiv_basic"/>
-    <div class="d-flex row justify-content-center m-auto">
+    ​<picture>
+      <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
+        type="image/svg+xml">
+      <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
+    </picture>
 
-    <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid "></object>
-        <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid "></object>
-        <object data="images/snapchat.svg" type="image/svg+xml" class="img-fluid "></object>
-        <object data="images/instagram.svg" type="image/svg+xml" class="img-fluid "></object>
-        <object data="images/facebook.svg" type="image/svg+xml" class="img-fluid "></object>
 
-    </div>
-    </div>
+    <img class="img-fluid col-md-6 float-right teens" src="images/hero_img_hiv_basics.jpg" alt="hero img 1" />
+    <div class="col-md-5 px-3 mb-lg-5">
+      <h3>HIV/AIDS BASICS</h3>
+      <p class="text-lg-left"> AIDS has been one of the most destructive pandemics in the history of humankind. More than 35 million people have died of AIDS-related illnesses.... </p>
+        <div class="d-flex row justify-content-center m-auto">
+
+        <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/snapchat.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/instagram.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/facebook.svg" type="image/svg+xml" class="img-fluid "></object>
     
-    <div>
-    <h3>HIV/AIDS BASICS</h3>
-            <p class="text-lg-left"> AIDS has been one of the most destructive pandemics in the history of humankind. More than 35 million people have died of AIDS-related illnesses.... </p>
+        </div>
+    
     </div>
 
-</div>
+        </div>
+        </div>
+
+    
 
 <div class="container">
   
