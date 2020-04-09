@@ -1,58 +1,68 @@
 <?php
-require '../load.php';
+require_once '../load.php';
 confirm_logged_in();
 
-$get_info = getInfo();
+$id = $_GET['id'];
 
-$result = array('info' => array());
+$current_product = getSingleInfo($id);
 
-if (isset($_GET['json'])) {
-    while ($row = $get_info->fetch(PDO::FETCH_ASSOC)) {
-        $single = $row;
-        $results = array_push($result['info'], $single);
-    }
 
-    echo json_encode($result, JSON_PRETTY_PRINT);
+
+if (!$current_product) {
+    $message = 'Failed to get user info';
 }
 
 if (isset($_POST['submit'])) {
-    $infos = array(
-        'antiretroviral_therapy' => $_POST['antiretroviral_therapy'],
-        'newly_infected' => $_POST['newly_infected'],
-        'global' => $_POST['global'],
+    $info = array(
+        'id' => $id,
+        'image'     =>  $_FILES['image'],
+        'name'     =>  $_POST['name'],
+        'value'      =>  $_POST['value'],
+        'description'       =>  $_POST['description'],
+
+
     );
 
-
-    $message = updateInfo($infos);
+    $message = updateInfo($info);
 }
 
+
 ?>
-<?php if (!isset($_GET['json'])) : ?>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Edit Info</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+</head>
 
-        <h1>Edit Info</h1>
-        <?php echo !empty($message) ? $message : ''; ?>
-        <form action="admin_editinfo.php" method='POST'>
-            <?php while ($row = $get_info->fetch(PDO::FETCH_ASSOC)) : ?>
+<body>
+    <h1>Edit Product</h1>
 
-                <label><?php echo $row['name'] ?></label>
-                <input type='text' name='<?php echo trim($row['name']); ?>' value='<?php echo $row['value'] ?>'><br>
-            <?php endwhile;
-            ?>
-            <button type="submit" name="submit">Edit Info</button>
-        </form>
+    <?php echo !empty($message) ? $message : ''; ?>
+    <form action='admin_editinfo.php?id=<?php echo $id; ?>' method="post" enctype="multipart/form-data">
+        <?php if ($current_product) : ?>
+            <?php while ($product_info = $current_product->fetch(PDO::FETCH_ASSOC)) : ?>
+                <label>Product Image:</label><br>
+                <input type='file' name="image" value=""><br><br>
 
-    </body>
+                <label>Product Name:</label><br>
+                <input type='text' name="name" value="<?php echo $product_info['name']; ?>"><br><br>
 
-    </html>
+                <label>Product Value:</label><br>
+                <input type='text' name="value" value="<?php echo $product_info['value']; ?>"><br><br>
 
-<?php endif; ?>
+                <label>Product Description:</label><br>
+                <textarea type='text' name="description" value=""><?php echo $product_info['description']; ?></textarea><br><br>
+
+
+
+                <button type="submit" name="submit">Edit Info</button>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </form>
+</body>
+
+</html>

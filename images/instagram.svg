@@ -1,29 +1,17 @@
-<svg id="instagram" data-name="034-instagram" xmlns="http://www.w3.org/2000/svg" width="38.703" height="38.704" viewBox="0 0 38.703 38.704">
- <style type="text/css">
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#c92c32;}
-
-  #instagram:hover .st1{
-    cursor:pointer !important;
-    fill:#601717 !important;
-    transition: 600ms cubic-bezier(.99,0,.57,.94) !important;
-  
- 
-    }
-   
-</style>
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="31.574" height="31.574" viewBox="0 0 31.574 31.574">
   <g id="Group_5" data-name="Group 5">
     <g id="Group_4" data-name="Group 4">
-      <path id="Path_4" class="st1" data-name="Path 4" d="M26.609,0H12.095A12.1,12.1,0,0,0,0,12.095V26.609A12.1,12.1,0,0,0,12.095,38.7H26.609A12.1,12.1,0,0,0,38.7,26.609V12.095A12.1,12.1,0,0,0,26.609,0Zm8.466,26.609a8.476,8.476,0,0,1-8.466,8.466H12.095a8.476,8.476,0,0,1-8.466-8.466V12.095a8.476,8.476,0,0,1,8.466-8.466H26.609a8.476,8.476,0,0,1,8.466,8.466Z" fill="#c92c32"/>
+      <path id="Path_4" data-name="Path 4" d="M21.707,0H9.867A9.868,9.868,0,0,0,0,9.867v11.84a9.868,9.868,0,0,0,9.867,9.867h11.84a9.868,9.868,0,0,0,9.867-9.867V9.867A9.868,9.868,0,0,0,21.707,0Zm6.907,21.707a6.914,6.914,0,0,1-6.907,6.907H9.867A6.914,6.914,0,0,1,2.96,21.707V9.867A6.914,6.914,0,0,1,9.867,2.96h11.84a6.914,6.914,0,0,1,6.907,6.907Z" fill="#db3131"/>
     </g>
   </g>
-  <g id="Group_7" data-name="Group 7" transform="translate(9.676 9.676)">
+  <g id="Group_7" data-name="Group 7" transform="translate(7.893 7.893)">
     <g id="Group_6" data-name="Group 6">
-      <path id="Path_5" class="st1" data-name="Path 5" d="M137.676,128a9.676,9.676,0,1,0,9.676,9.676A9.676,9.676,0,0,0,137.676,128Zm0,15.723a6.047,6.047,0,1,1,6.047-6.047A6.056,6.056,0,0,1,137.676,143.723Z" transform="translate(-128 -128)" fill="#c92c32"/>
+      <path id="Path_5" data-name="Path 5" d="M135.893,128a7.893,7.893,0,1,0,7.893,7.893A7.894,7.894,0,0,0,135.893,128Zm0,12.827a4.933,4.933,0,1,1,4.933-4.933A4.94,4.94,0,0,1,135.893,140.827Z" transform="translate(-128 -128)" fill="#db3131"/>
     </g>
   </g>
-  <g id="Group_9" data-name="Group 9" transform="translate(28.464 7.661)">
+  <g id="Group_9" data-name="Group 9" transform="translate(23.221 6.25)">
     <g id="Group_8" data-name="Group 8">
-      <ellipse id="Ellipse_1" class="st1" data-name="Ellipse 1" cx="1.289" cy="1.289" rx="1.289" ry="1.289" fill="#c92c32"/>
+      <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="1.052" cy="1.052" rx="1.052" ry="1.052" fill="#db3131"/>
     </g>
   </g>
 </svg>
