@@ -3,7 +3,32 @@ export default {
     <div>
 
     <div class="jumbotron text-center hero-basic">
-        <img class="img-fluid" src="images/hero_druguse.svg" alt="hero drug use"/>
+    <div class="hero-img-talk text-center p-4 row flex-row-reverse align-items-end">
+
+    ​<picture>
+      <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
+        type="image/svg+xml">
+      <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
+    </picture>
+
+
+    <img class="img-fluid col-md-6 float-right teens" src="images/hero_img_drug_use.jpg" alt="hero img 1" />
+    <div class="col-md-5 px-3 mb-lg-5">
+      <h3>DRUG USE</h3>
+      <p class="text-lg-left">You deserve to do things that make you happy without shame. We want to make sure that people who do not want to stop using drugs, or feel like they cannot stop using drugs, are provided with strategies for safer substance use and safer sex. </p>
+        <div class="d-flex row justify-content-center m-auto">
+
+        <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/snapchat.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/instagram.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/facebook.svg" type="image/svg+xml" class="img-fluid "></object>
+    
+        </div>
+    
+    </div>
+
+        </div>
         </div>
         <div class="container">
 

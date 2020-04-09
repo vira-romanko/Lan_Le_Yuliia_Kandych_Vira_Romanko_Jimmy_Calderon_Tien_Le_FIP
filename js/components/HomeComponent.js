@@ -6,7 +6,7 @@ export default {
 <div>
   
 
-  <div class="col  text-center ">
+  <div class="col  text-center">
     <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
 
@@ -33,7 +33,7 @@ export default {
 
         </div>
 
-        <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
+        <div class="carousel-item  text-center p-4 row flex-row-reverse align-items-end">
 
         ​<picture>
           <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
@@ -42,20 +42,18 @@ export default {
         </picture>
 
 
-        <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
+        <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img_2.jpg" alt="hero img 1" />
         <div class="col-md-5 px-3">
-          <h3>LIVING WITH HIV/AIDS</h3>
-          <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
-            have to disclose your status to family, friends, or healthcare
-            providers outside of your HIV healthcare provider. </p>
+          <h3>COVER YOUR LOVER</h3>
+          <p class="text-lg-left"> Using condoms correctly and consistently each time you have sex greatly reduces the risk of passing or getting HIV. Did you know there are two kinds of condoms? </p>
           <button class="blue-btn">
-            <router-link class="router-link" to="/living_with_hiv">More info</router-link>
+            <router-link class="router-link" to="/safe_sex">More info</router-link>
           </button>
         </div>
 
 
       </div>
-      <div class="carousel-item active text-center p-4 row flex-row-reverse align-items-end">
+      <div class="carousel-item  text-center p-4 row flex-row-reverse align-items-end">
 
       ​<picture>
         <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
@@ -64,14 +62,13 @@ export default {
       </picture>
 
 
-      <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img.jpg" alt="hero img 1" />
+      <img class="img-fluid col-md-7 float-right teens" src="images/home_page/hero_img_3.jpg" alt="hero img 1" />
       <div class="col-md-5 px-3">
-        <h3>LIVING WITH HIV/AIDS</h3>
-        <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
-          have to disclose your status to family, friends, or healthcare
-          providers outside of your HIV healthcare provider. </p>
+        <h3>DO NOT BE AFRAID 
+        TO KNOW</h3>
+        <p class="text-lg-left"> It’s important that every young person feels empowered and informed about the decisions they’re making that affect their health and overall well-being.</p>
         <button class="blue-btn">
-          <router-link class="router-link" to="/living_with_hiv">More info</router-link>
+          <router-link class="router-link" to="/hiv_basics">More info</router-link>
         </button>
       </div>
 
@@ -90,6 +87,8 @@ export default {
     </div>
 
   </div>
+
+  
 
   <h1 class="title text-center m-4">HIV NUMBERS</h1>
   <div class="numbers  row">
@@ -138,7 +137,7 @@ export default {
   </div>
 
   
-      <div class="protect d-flex row">
+      <div class=" d-flex row">
       
        <img class="img-fluid bg-img mb-3 " src="images/protect_yourself.svg" alt="bg_image"/>
        <h1 class="title col text-center m-4">PROTECT YOURSELF</h1>
@@ -210,6 +209,7 @@ export default {
       </div>
         
     
+    </div>
     </div>
 
 </div>

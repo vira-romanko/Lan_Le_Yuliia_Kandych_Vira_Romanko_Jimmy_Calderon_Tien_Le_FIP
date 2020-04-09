@@ -2,9 +2,34 @@ export default {
     template: `
     <div>
     <div class="jumbotron text-center hero-basic">
-            <img class="img-fluid" src="images/hero_living_with_hiv.svg" alt="hero_hiv_basic"/>
-         
-        
+    <div class="hero-img-talk text-center p-4 row flex-row-reverse align-items-end">
+
+    ​<picture>
+      <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
+        type="image/svg+xml">
+      <img class="img-fluid " src="images/home_page/chat_bubble.svg" alt="chat bubble" />
+    </picture>
+
+
+    <img class="img-fluid col-md-6 float-right teens" src="images/hero_img_living_with_hiv.jpg" alt="hero img 1" />
+    <div class="col-md-5 px-3 mb-lg-5">
+      <h3>LIVING WITH HIV/AIDS</h3>
+      <p class="text-lg-left"> Telling someone you have HIV is your decision. You don’t
+        have to disclose your status to family, friends, or healthcare
+        providers outside of your HIV healthcare provider. </p>
+        <div class="d-flex row justify-content-center m-auto">
+
+        <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/snapchat.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/instagram.svg" type="image/svg+xml" class="img-fluid "></object>
+            <object data="images/facebook.svg" type="image/svg+xml" class="img-fluid "></object>
+    
+        </div>
+    
+    </div>
+
+        </div>
         </div>
 
         <div class="container">
