@@ -8,6 +8,7 @@ import Stigma from "./components/StigmaComponent.js";
 import Login from "./components/LoginComponent.js";
 import Signup from "./components/SignupComponent.js";
 import HivTest from "./components/HivTestComponent.js";
+import Contact from "./components/ContactComponent.js";
 
 
 
@@ -23,6 +24,7 @@ const routes = [
   { path: "/drug_use", name: "Drug Use", component: Drugs },
   { path: "/safe_sex", name: "Safe Sex", component: SafeSex },
   { path: "/hiv_test", name: "HIV Test", component: HivTest },
+  { path: "/contact", name: "Contact", component: Contact},
   { path: "/login", name: "Login", component: Login },
   { path: "/signup", name: "Signup", component: Signup }
 

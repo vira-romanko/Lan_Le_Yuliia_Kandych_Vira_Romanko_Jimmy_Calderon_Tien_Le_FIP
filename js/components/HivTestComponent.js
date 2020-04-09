@@ -13,8 +13,9 @@ export default {
 
     <img class="img-fluid col-md-6 float-right teens" src="images/hero_img_hiv_test.jpg" alt="hero img 1" />
     <div class="col-md-5 px-3 mb-lg-5">
-      <h3>COVER YOUR LOVER</h3>
-      <p class="text-lg-left"> Using condoms correctly and consistently each time you have sex greatly reduces the risk of passing or getting HIV. Did you know there are two kinds of condoms? </p>
+      <h3>HIV TEST</h3>
+      <p class="text-lg-left"> HIV Testing is the only way to know for sure if you have HIV.
+      The HIV test is a blood test. There are two ways this test can be done.</p>
         <div class="d-flex row justify-content-center m-auto">
 
         <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid "></object>
@@ -88,8 +89,8 @@ export default {
         
       <h1 class="title text-center m-4 p-4">Support</h1>
       <h2 class="text-center mb-3">Need help? Contact Us!</h2>
-     <div class="row m-auto">
-  
+     <div class="d-flex row flex-wrap m-auto support">
+  <div class=" d-flex row">
      <div class="col-6">
      <h4>Email:</h4>
      <p>teentalks_help@teentalks.ca</p>
@@ -101,15 +102,16 @@ export default {
      Units 1‑5
      Toronto, ONM5T 3B2</p>
      </div>
-
+     </div>
+    <div class="d-flex row">
      <div class="col-6">
      <h4>Phone:</h4>
-     <p>(Toronto Area)
+     <p class="p-2">(Toronto Area)
      (416) 628-6948 
      (toll-free in North America)
      (877) 755-1595</p>
      </div>
-   <div class="col-6">
+   <div class="col">
    <h4>Social Media</h4>
   <div class="d-flex  row  ">
 
@@ -119,6 +121,7 @@ export default {
   <object data="images/instagram.svg" type="image/svg+xml" class="img-fluid p-2"></object>
   <object data="images/facebook.svg" type="image/svg+xml" class="img-fluid p-2 "></object>
 
+</div>
 </div>
 </div>
 

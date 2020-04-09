@@ -1,0 +1,58 @@
+.support{
+    display: flex;
+    //justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.contactForm {
+    button{
+        display: flex;
+        margin: 0 auto;
+    }
+    margin: 0 auto;
+    &::placeholder {
+      font-size: 18px;
+      opacity: 0.5;
+      padding: 10px 20px;
+    }
+  
+    form {
+      padding: 60px 20px;
+    }
+  
+    .formColumn {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  
+    input,
+    textarea {
+      margin: 0px 0px 40px 0px;
+      // width: 80vw;
+      // height: 50px;
+      border: solid 1px #457AB0 ;
+      border-radius: 10px;
+      background-color: transparent;
+      color: #2B2B2B;
+      font-size: 18px;
+      flex: 1;
+      padding: 10px;
+  
+      outline: none;
+    }
+  
+
+  
+    textarea {
+      margin: 0px 0px 0px 0px;
+      height: 300px;
+      width: 120%;
+      box-sizing: border-box;
+    }
+  
+    input:active {
+      outline: none;
+    }
+  }
