@@ -90,9 +90,9 @@ export default {
                     levels.</p>
             </div>
             <h1 class="title text-center m-4 p-4 col">FIND YOUR HERO</h1>
-            <div class="m-5 row text-center justify-content-around cards">
+            <div class="m-5 hero row text-center justify-content-around cards">
 
-            <img class="img-fluid col bg" src="../images/bg_blue.svg"/>
+            
             
              
             <div class="card mt-2">
@@ -174,30 +174,30 @@ Against Youth HIV Infection</h5>
         
             <h1 class="title text-center m-4 p-4">Support</h1>
             <h2 class="text-center mb-3">Need help? Contact Us!</h2>
-           <div class="row m-auto">
+           <div class="d-flex text-center row m-auto">
         
-           <div class="col-6">
+           <div class="col-md-6">
            <h4>Email:</h4>
            <p>teentalks_help@teentalks.ca</p>
            </div>
 
-           <div class="col-6">
+           <div class="col-md-6">
            <h4>Mailling Adress:</h4>
            <p>186 Spadina Avenue 
            Units 1‑5
            Toronto, ONM5T 3B2</p>
            </div>
 
-           <div class="col-6">
+           <div class="col-md-6">
            <h4>Phone:</h4>
            <p>(Toronto Area)
            (416) 628-6948 
            (toll-free in North America)
            (877) 755-1595</p>
            </div>
-         <div class="col-6">
+         <div class="col-md-6">
          <h4>Social Media</h4>
-        <div class="d-flex  row  ">
+        <div class="d-flex justify-content-center">
 
         <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid p-2 "></object>
         <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid p-2"></object>

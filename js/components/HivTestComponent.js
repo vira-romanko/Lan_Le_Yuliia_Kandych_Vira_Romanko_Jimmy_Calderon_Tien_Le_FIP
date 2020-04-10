@@ -54,19 +54,19 @@ export default {
     <h1 class="title text-center col m-3 ">Who knows my positive 
     HIV result?</h1>
 
-    <div class="row   text-center justify-content-between align-items-center">
+    <div class="row  text-center justify-content-center align-items-center">
      
       <div class="col-lg-6  text-md-left">
         <p class="pt-4">In most provinces and territories of Canada, (aside from Quebec), HIV is a reportable illness. This means that providers who come across a positive test result have a duty to report that result in public health representatives. You might have heard about the partner-notification system. This system exists to ensure that people know they are at risk of getting HIV and to encourage people to get tested as quickly as possible.</p>
          
 
       </div>
-      <img class="col-lg-6 " src="images/hiv_test_img_1.jpg" alt="character">
+      <img class=" col-8 col-lg-6 " src="images/hiv_test_img_1.jpg" alt="character">
       
   </div>
 
-            <div class="row text-center justify-content-between align-items-center">
-        <img class="col-lg-5 img-fluid p-sm-5 p-lg-2" src="images/hiv_test_img_2.jpg" alt="character">
+            <div class="row text-center justify-content-center align-items-center">
+        <img class=" col-8 col-lg-5 img-fluid p-sm-5 p-lg-2" src="images/hiv_test_img_2.jpg" alt="character">
         <div class="col-lg-6 text-center text-md-right">
           <p class="p-4"> In Canada, when you test positive for HIV, you would be asked by a healthcare provider or a public health official to get in touch with people who may have been exposed to HIV since your last test. This would include anyone you are sexually active with, as well as anyone you share drugs with. If you don’t want to let people know directly, you can also share these people’s contact information with Public Health, and they will contact your partners for you letting them know that they may want to get tested for HIV. They will not reveal your HIV status to anyone, however, in cases of monogamous relationships, people may guess about where they were exposed to HIV.</p>
             
@@ -74,7 +74,7 @@ export default {
 
         </div>
 
-        <div class="row mt-5 text-center justify-content-between align-items-center">
+        <div class="row mt-5 text-center justify-content-center align-items-center">
      
           <div class="col-lg-7  text-md-left">
             <p class="p-4">If you volunteer to have an HIV test, you are giving consent to a provider to do the test for you.
@@ -82,47 +82,13 @@ export default {
               </p>
 
           </div>
-          <img class="col-lg-5 p-sm-5 p-lg-2" src="images/hiv_test_img_3.jpg" alt="character">
+          <img class="col-8 col-lg-5 p-sm-5 p-lg-2" src="images/hiv_test_img_3.jpg" alt="character">
           
       </div>
       </div>
+      
         
-      <h1 class="title text-center m-4 p-4">Support</h1>
-      <h2 class="text-center mb-3">Need help? Contact Us!</h2>
-     <div class="d-flex row flex-wrap m-auto support">
-  <div class=" d-flex row">
-     <div class="col-6">
-     <h4>Email:</h4>
-     <p>teentalks_help@teentalks.ca</p>
-     </div>
-
-     <div class="col-6">
-     <h4>Mailling Adress:</h4>
-     <p>186 Spadina Avenue 
-     Units 1‑5
-     Toronto, ONM5T 3B2</p>
-     </div>
-     </div>
-    <div class="d-flex row">
-     <div class="col-6">
-     <h4>Phone:</h4>
-     <p class="p-2">(Toronto Area)
-     (416) 628-6948 
-     (toll-free in North America)
-     (877) 755-1595</p>
-     </div>
-   <div class="col">
-   <h4>Social Media</h4>
-  <div class="d-flex  row  ">
-
-  <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid p-2 "></object>
-  <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid p-2"></object>
-  <object data="images/snapchat.svg" type="image/svg+xml" class="img-fluid p-2"></object>
-  <object data="images/instagram.svg" type="image/svg+xml" class="img-fluid p-2"></object>
-  <object data="images/facebook.svg" type="image/svg+xml" class="img-fluid p-2 "></object>
-
-</div>
-</div>
+      
 </div>
 
 

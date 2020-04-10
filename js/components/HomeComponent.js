@@ -25,9 +25,10 @@ export default {
                   <div class="col-md-5 px-3">
                       <h3>{{number.name}}</h3>
                       <p class="text-lg-left">{{number.description}}</p>
-                      <button class="blue-btn">
+                      <button class="btn">
                           <router-link class="router-link" to="/living_with_hiv">More info</router-link>
                       </button>
+                    
                   </div>
 
 
@@ -78,8 +79,7 @@ export default {
           </div>
 
           <div class="m-2">
-              <h2>... how people living
-                  with HIV/AIDS be like?</h2>
+              <h2>... how are people living with HIV/AIDS?</h2>
               <p>Currently, over 30% of all new HIV infections globally are estimated to occur among youth ages 15 to
                   25
                   years. Also, increasingly, children infected at birth grow into adolescents who have to deal with
@@ -104,14 +104,14 @@ export default {
   </div>
 
 
-  <div class="protect d-flex row">
+  <div class="protect d-flex row mb-5 ">
 
-      <img class="img-fluid bg-img mb-3 " src="images/protect_yourself.svg" alt="bg_image" />
+      <img class="img-fluid bg-img " src="images/protect_yourself.svg" alt="bg_image" />
       <h1 class="title col text-center m-4">PROTECT YOURSELF</h1>
-      <div class="d-flex row ">
+      <div class="d-flex row justify-content-center ">
 
-          <div class="col-md-6 align-middle">
-              <p class="p-5 align-items-center">Protecting yourself from HIV begins with
+          <div class="col-md-6 align-middle ">
+              <p class="p-5 align-items-center text-center text-lg-left pl-md-5 ">Protecting yourself from HIV begins with
                   understanding how the virus is spread.
                   The virus can be passed in only certain ways:
                   During sex with a person infected with HIV;
@@ -122,19 +122,19 @@ export default {
                       <router-link class="router-link" to="/safe_sex">Safe sex</router-link>
                   </button>
                   <button class="blue-btn">
-                      <router-link class="router-link" to="/safe_drug_use">Safe drug use</router-link>
+                      <router-link class="router-link" to="/drug_use">Safe drug use</router-link>
                   </button>
 
               </div>
 
           </div>
-          <img class="img-fluid col-md-6 flex-sm-column-reverse" src="images/protect_yourself_2.png" alt="people" />
+          <img class="img-fluid col-8  col-md-6 flex-sm-column-reverse p-2" src="images/protect_yourself_2.png" alt="people" />
 
       </div>
   </div>
 
 
-  <div class="hiv-test text-center ">
+  <div class="hiv-test text-center mt-5 ">
       <h1 class="title text-center m-4 p-4">UP TO TEST?</h1>
       <h2>What is an HIV test?</h2>
       <p class="text-center p-4"> The HIV test is a blood test. There are two ways this test can be done.

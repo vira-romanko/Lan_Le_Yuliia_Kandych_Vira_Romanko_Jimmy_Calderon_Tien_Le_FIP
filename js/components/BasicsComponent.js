@@ -38,7 +38,7 @@ export default {
         
         <div  class="d-flex row hiv-test text-center pl-4 pr-4 pb-4">
     
-        <h1 class="title text-center  p-4">HIV/AIDS BASICS</h1>
+        <h1 class="title text-center  p-5">HIV/AIDS BASICS</h1>
             <p>AIDS has been one of the most destructive pandemics in the history of humankind. More than 35 million people have died of AIDS-related illnesses. There are an estimated 36 million people currently living with HIV globally. Those who live with HIV additionally carry the burden of stigma.</p>
         </div>
 
@@ -47,7 +47,9 @@ export default {
 
   <div class="video">
   <h1 class="title text-center m-4 p-4">#TEENTALKS</h1>
-    <img  class="img-fluid" src="images/video_img.svg" alt="red svg">
+  <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+</div>
   </div>
 
   <div>
@@ -120,7 +122,7 @@ export default {
     <div class="mt-4">
         <div class=" d-flex row  flex-wrap mt-3 justify-content-center">
             
-            <p class=" p-5 p-md-2 col-xl-6 text-md-left text-center align-text-bottom">HIV stands for Human Immunodeficiency Virus. It is a virus that attacks the immune system. It attacks and destroys white blood cells and makes copies of itself in these cells, which are our body’s natural defense against illness. 
+            <p class="p-text p-5 p-md-2 col-xl-6 text-md-left text-center align-text-bottom">HIV stands for Human Immunodeficiency Virus. It is a virus that attacks the immune system. It attacks and destroys white blood cells and makes copies of itself in these cells, which are our body’s natural defense against illness. 
                 As the white blood cells are destroyed and more copies of the HIV are made, without treatment, a person’s immune system is broken down. This makes it harder and harder for the person to fight off infections and diseases. If HIV is untreated, it may take up to a decade for the immune system to be so severely damaged that it can no longer defend itself at all. The speed that HIV progresses depends on a person’s age, health, and background. This final level of infection is called AIDS.</p>
                 <img class="img-fluid col-xl-6 align-items-center" src="images/hiv_img.jpg" alt="character"/>
         </div>
@@ -128,7 +130,7 @@ export default {
         <h1 class="title text-center m-4">AIDS</h1>
         <div class="d-flex row flex-wrap jusify-content-center text-center ">
             <img class="img-fluid  col-xl-6 align-center m-auto" src="images/aids_img.jpg" alt="character"/>
-            <p class=" p-4 p-md-2 col-xl-6 text-md-right text-center align-text-bottom">AIDS stands for Acquired Immune Deficiency Syndrome. It is also referred to as advanced HIV infection or late-stage HIV. AIDS is a set of symptoms and illnesses that develop as a result of advanced HIV infection, which has destroyed the immune system. These symptoms or illnesses is known as the last stage of HIV, or advanced HIV infection, which is ultimately AIDS. When HIV is so advanced that it has transformed into AIDS, and if left untreated, could lead to death.</p>
+            <p class="p-text p-4 p-md-2 col-xl-6 text-md-right text-center align-text-bottom">AIDS stands for Acquired Immune Deficiency Syndrome. It is also referred to as advanced HIV infection or late-stage HIV. AIDS is a set of symptoms and illnesses that develop as a result of advanced HIV infection, which has destroyed the immune system. These symptoms or illnesses is known as the last stage of HIV, or advanced HIV infection, which is ultimately AIDS. When HIV is so advanced that it has transformed into AIDS, and if left untreated, could lead to death.</p>
             
         </div>
     
@@ -138,9 +140,9 @@ export default {
    
 
    <div class="m-5 row text-center transmittion">
-   <img class="img-fluid col" src="../images/bg_blue.svg"/>
+   <img class="img-fluid col" src="images/bg_blue.svg"/>
    <h1 class="title col text-center m-4">HOW IS HIV TRANSMITTED?</h1>
-   <p class="p-4">A person can contract the virus by having unprotected sex (vaginal or anal) and oral sex with someone who is HIV-positive; receiving a contaminated blood; and sharing contaminated needles, syringes, surgical equipment or other 
+   <p class=" p-text p-4">A person can contract the virus by having unprotected sex (vaginal or anal) and oral sex with someone who is HIV-positive; receiving a contaminated blood; and sharing contaminated needles, syringes, surgical equipment or other 
    sharp instruments.
    HIV is ultimately found in semen, blood, vaginal and anal fluids, and breast milk. It cannot be transmitted through sweat, saliva or urine. </p> 
    </div>
