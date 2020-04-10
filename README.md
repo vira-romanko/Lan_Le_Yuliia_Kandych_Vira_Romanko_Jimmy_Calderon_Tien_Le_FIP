@@ -1,15 +1,16 @@
 # #TEENTALKS
 
 ## WE NEED TO TALK!
+![Image description](/images/mockup_1.jpg)
 
-![Image description](/images/mockup_website.jpg)
+
 
 Communication is key to a successful connection between youth!
 An awareness campaign that focuses on different focal areas for
 the Regional HIV/Aids Connection. This is a marketing and digital campaign that resonates with
 the target audience through our main messaging and visuals that make it impactful - TEEN TALKS. Making it
 memorable for the teenage group for years to come.
-![Image description](/images/mockup_1.jpg)
+![Image description](/images/mockup_2.jpg)
 
 
 
