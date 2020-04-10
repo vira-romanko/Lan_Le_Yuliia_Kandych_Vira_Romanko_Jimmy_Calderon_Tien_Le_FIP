@@ -24,7 +24,7 @@ nav{
             font-weight: bold;
             margin: 0;
             &:hover{
-                color:#c92c32;
+                color:$red;
                 transition: 600ms cubic-bezier(.99,0,.57,.94);
             }
         }

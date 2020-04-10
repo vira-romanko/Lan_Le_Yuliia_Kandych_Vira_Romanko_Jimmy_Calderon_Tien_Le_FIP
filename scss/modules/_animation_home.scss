@@ -75,44 +75,7 @@ a:active{
     }
     
 
-    //animated hero text
-    .title{
 
-   
-        .darker{
-            color: rgb(96, 23, 23);
-        }
-           span{
-            
-            width: 100%;
-            float: left;
-            color:red;
-            padding-top: 20px;
-            padding-left: 45px;
-            font-weight: bold;
-            //transform: translateY(-50px);
-            opacity: 1;
-            animation-name: titleAnimation;
-            animation-timing-function:ease;
-            animation-duration: 5s;
-          }
-    
-          h1 span{
-            animation-delay: 0.6s;
-            animation-fill-mode: forwards;
-          
-            &:first-child{
-              animation-delay: 0.7s;
-          
-            }
-          
-            &:last-child{
-             
-              animation-delay: 0.5s;
-            }
-          }
-    
-       }
     
         
        @keyframes titleAnimation {
@@ -162,6 +125,7 @@ a:active{
 .btn:hover{
    box-shadow:0px 10px 10px rgba(0,0,0,0.2);
    transform : translateY(-3px);
+   transition: all 0.25s;
 
    
 }

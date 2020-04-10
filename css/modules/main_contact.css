@@ -12,8 +12,6 @@
     font-size: 18px;
     opacity: 0.5;
     padding: 10px 20px; }
-  .contactForm form {
-    padding: 60px 20px; }
   .contactForm .formColumn {
     display: flex;
     flex-direction: column;
@@ -32,7 +30,7 @@
   .contactForm textarea {
     margin: 0px 0px 0px 0px;
     height: 300px;
-    width: 120%;
+    width: 300px;
     box-sizing: border-box; }
   .contactForm input:active {
     outline: none; }

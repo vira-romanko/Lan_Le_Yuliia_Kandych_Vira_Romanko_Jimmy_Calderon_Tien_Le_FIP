@@ -20,7 +20,7 @@
   font-size: 1rem; }
 
 .honest {
-  background-image: url("/images/bg_blue.svg");
+  background-image: url("../images/bg_blue.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: #2B2B2B; }

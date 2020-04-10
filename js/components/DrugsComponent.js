@@ -57,8 +57,8 @@ export default {
                     <p>You deserve to do things that make you happy without shame. We want to make sure that people who do not want to stop using drugs, or feel like they cannot stop using drugs, are provided with strategies for safer substance use and safer sex.</p>
                 </div>
 
-                <div class="d-flex row mt-0">
-                <div class="d-flex row" data-aos="fade-left"  data-aos-duration="2000">
+                <div class="d-flex row mt-0 ">
+                <div class="d-flex row justify-content-center" data-aos="fade-left"  data-aos-duration="2000">
                     <div class="col-sm-12 col-lg-6 p-5">
                     <h4 class="drugs-subtitle d-block">Syringe Exchange Programs
                         and Safe Injection Sites</h4>
@@ -66,12 +66,12 @@ export default {
                     </p>
                     </div>
 
-                    <img  class="col-sm-12 col-lg-6" src="images/drugs_img_3.jpg" alt="black-box"/>
+                    <img  class="col-8 col-lg-6" src="images/drugs_img_3.jpg" alt="black-box"/>
         
           
                   </div>
-                   <div  class="d-flex row"  data-aos="fade-right"  data-aos-duration="2000">
-                     <img class="col-sm-12 col-lg-6" src="images/drugs_img_4.jpg" alt="black-box"/>
+                   <div  class="d-flex row justify-content-center"  data-aos="fade-right"  data-aos-duration="2000">
+                     <img class="col-8 col-lg-6" src="images/drugs_img_4.jpg" alt="black-box"/>
                     <div class="col-sm-12 col-lg-6 p-5">
                     <h4 class="text-left drugs-subtitle">Methadone Programs</h4>
                     <p class="text-left ">Methadone is a legal substance used as a treatment for people who are dependent on opioids. Methadone programs offer interventions like counseling and other health services.

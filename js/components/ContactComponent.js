@@ -35,14 +35,14 @@ export default {
 
     <h1 class="title text-center m-4 p-4">Support</h1>
       <h2 class="text-center mb-3">Need help? Contact Us!</h2>
-     <div class="d-flex m-4 flex-wrap col  m-auto support">
+     <div class="d-flex m-4 text-center row">
   
-     <div class="col-6">
+     <div class="col-md-6">
      <h4>Email:</h4>
      <p>teentalks@teentalks.ca</p>
      </div>
 
-     <div class="col-6">
+     <div class="col-md-6">
      <h4>Mailling Adress:</h4>
      <p>186 Spadina Avenue 
      Units 1‑5
@@ -50,16 +50,16 @@ export default {
      </div>
     
     
-     <div class="col-6">
+     <div class="col-md-6">
      <h4>Phone:</h4>
      <p class="p-2">(Toronto Area)
      (416) 628-6948 
      (toll-free in North America)
      (877) 755-1595</p>
      </div>
-   <div class="col">
+   <div class="col-md-6">
    <h4>Social Media</h4>
-  <div class="d-flex  row  ">
+  <div class="d-flex  justify-content-center">
 
   <object data="images/youtube.svg" type="image/svg+xml" class="img-fluid p-2 "></object>
   <object data="images/twitter.svg" type="image/svg+xml" class="img-fluid p-2"></object>
@@ -74,14 +74,14 @@ export default {
       <h2 class="text-center mb-3">We are guarantee to respond to you
       within 3 business days. </h2>
       <div class="contactForm">
-      <form class="d-flex row justify-content-center">
-            <div class="formColumn col-sm-12 col-md-6 m-5">
+      <form class="d-block d-md-flex flex-wrap row justify-content-center support">
+            <div class="formColumn  col-md-6  mt-3">
               <input placeholder="First Name" />
               <input placeholder="Last Name" />
               <input placeholder="Phone" />
               <input placeholder="Email" />
             </div>
-            <textarea name="comments" class="m-5" placeholder="Message"></textarea>
+            <textarea name="comments" class="m-3  col-md-6" placeholder="Message"></textarea>
           </form>
           <button>Send</button>
 
