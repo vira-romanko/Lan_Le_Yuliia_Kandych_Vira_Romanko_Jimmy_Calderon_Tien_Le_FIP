@@ -15,7 +15,7 @@ import Contact from "./components/ContactComponent.js";
 const routes = [
   {
     path: "/", name: "Home", component: Home, meta: {
-      title: 'Home Page - Example App'
+      title: 'Home Page - Example App',
     }
   },
   { path: "/hiv_basics", name: "Basics", component: Basics },
@@ -24,7 +24,7 @@ const routes = [
   { path: "/drug_use", name: "Drug Use", component: Drugs },
   { path: "/safe_sex", name: "Safe Sex", component: SafeSex },
   { path: "/hiv_test", name: "HIV Test", component: HivTest },
-  { path: "/contact", name: "Contact", component: Contact},
+  { path: "/contact", name: "Contact", component: Contact },
   { path: "/login", name: "Login", component: Login },
   { path: "/signup", name: "Signup", component: Signup }
 
@@ -32,11 +32,29 @@ const routes = [
 
 const router = new VueRouter({
   routes,
-  // mode: "history"
 });
 
 
-new Vue({
-  router
+const vm = new Vue({
+  router,
+  data: {
+    user: null,
+  },
+  methods: {
+    confirmLogin(user) {
+      this.user = user
+    }
+  }
+
 
 }).$mount("#app");
+
+// router.beforeEach((to, from, next) => {
+//   //console.log('router guard fired!', to, from, vm.authenticated);
+
+//   if (vm.authenticated == false) {
+//     next("/");
+//   } else {
+//     next();
+//   }
+// });

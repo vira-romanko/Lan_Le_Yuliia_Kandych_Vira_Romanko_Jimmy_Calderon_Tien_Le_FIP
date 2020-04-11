@@ -47,14 +47,14 @@ function updateInfo($info)
 
 
 
-        $insert_info_query = 'UPDATE `tbl_info` SET name=:name,value=:value,description=:description,image=:image';
+        $insert_info_query = 'UPDATE `tbl_info` SET name=:name,link=:link,description=:description,image=:image';
         $insert_info_query .= ' WHERE info_id=:info_id';
 
         $insert_info = $pdo->prepare($insert_info_query);
         $insert_info_result = $insert_info->execute(
             array(
                 ':name' => $info['name'],
-                ':value' => $info['value'],
+                ':link' => $info['link'],
                 ':description' => $info['description'],
                 ':image' => $generated_filename,
                 ':info_id' => $info['id']
@@ -63,7 +63,7 @@ function updateInfo($info)
 
 
 
-
+        // echo $insert_info->debugDumpParams();
 
 
         redirect_to('index.php');
@@ -96,14 +96,14 @@ function addInfo($info)
 
 
 
-        $insert_info_query = 'INSERT INTO tbl_info(image,name,value,description)';
-        $insert_info_query .= ' VALUE(:image,:name,:value,:description)';
+        $insert_info_query = 'INSERT INTO tbl_info(image,name,link,description)';
+        $insert_info_query .= ' VALUE(:image,:name,:link,:description)';
 
         $insert_info = $pdo->prepare($insert_info_query);
         $insert_info_result = $insert_info->execute(
             array(
                 ':name' => $info['title'],
-                ':value' => $info['value'],
+                ':link' => $info['link'],
                 ':description' => $info['description'],
                 ':image' => $generated_filename,
             )

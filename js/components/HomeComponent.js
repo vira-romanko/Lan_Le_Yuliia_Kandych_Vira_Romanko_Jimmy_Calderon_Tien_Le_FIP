@@ -10,8 +10,8 @@ export default {
       <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
 
-              <div v-for="number in numbers"
-                  class="carousel-item text-center p-4 row flex-row-reverse align-items-end" :class="{active: number.info_id == 1}">
+              <div v-for="info in infos"
+                  class="carousel-item text-center p-4 row flex-row-reverse align-items-end" :class="{active: info.info_id == 1}">
 
                   ​<picture>
                       <source media="(min-width: 768px)" srcset="images/home_page/chat_bubble_desktop.svg"
@@ -20,13 +20,13 @@ export default {
                   </picture>
 
 
-                  <img class="img-fluid col-md-7 float-right teens" :src="'images/home_page/'+ number.image"
+                  <img class="img-fluid col-md-7 float-right teens" :src="'images/home_page/'+ info.image"
                       alt="hero img 1" />
                   <div class="col-md-5 px-3">
-                      <h3>{{number.name}}</h3>
-                      <p class="text-lg-left">{{number.description}}</p>
-                      <button class="btn">
-                          <router-link class="router-link" to="/living_with_hiv">More info</router-link>
+                      <h3>{{info.name}}</h3>
+                      <p class="text-lg-left">{{info.description}}</p>
+                      <button class="blue-btn">
+                          <router-link class="router-link" :to="info.link">More info</router-link>
                       </button>
                     
                   </div>
@@ -37,7 +37,7 @@ export default {
 
           </div>
           <div class="carousel-indicators">
-          <img v-for="(number,index) in numbers" data-target="#client-testimonial-carousel" :data-slide-to="index" class="active m-2"
+          <img v-for="(info,index) in infos" data-target="#client-testimonial-carousel" :data-slide-to="index" class="active m-2"
               src="images/home_page/slide_dot_bold.svg" />
           </div>
       </div>
@@ -188,24 +188,32 @@ export default {
     data() {
         return {
             articles: null,
-            numbers: {
+            infos: {
 
-            }
+            },
+            user: null
         }
     },
 
 
     mounted() {
         console.log('mounted')
+
+        //news api
         let url = 'https://newsapi.org/v2/everything?qInTitle=hiv&apiKey=0b89d19105dc493bb2b0465a8152dec8&pageSize=4&sortBy=relevancy&fbclid=IwAR1OBl735Dd52VkjVPhSBe_tdsb6aUCIFx7o6JBmcmrVefni2vJ6NqEmSJs'
         fetch(url)
             .then(res => res.json())
             .then(data => this.articles = data.articles)
 
-
-        fetch('./admin/get_json.php')
+        //cms content
+        fetch('./admin/get_json.php?info')
             .then(res => res.json())
-            .then(data => this.numbers = data.info)
+            .then(data => this.infos = data.info)
+
+        //get admin dashboard
+        fetch('./admin/get_json.php?user')
+            .then(res => res.json())
+            .then(data => this.$emit("authenticated", data))
 
 
 
