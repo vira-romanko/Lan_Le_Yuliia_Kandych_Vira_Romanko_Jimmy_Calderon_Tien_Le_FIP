@@ -7152,6 +7152,10 @@ nav {
   nav .first-button {
     outline: none;
     border: 0; }
+  nav .btn-primary {
+    background: #EC4B4B;
+    color: white !important;
+    border-radius: 30px; }
 
 nav .first-button {
   outline: none;

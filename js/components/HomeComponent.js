@@ -213,7 +213,7 @@ export default {
         //get admin dashboard
         fetch('./admin/get_json.php?user')
             .then(res => res.json())
-            .then(data => this.$emit("authenticated", data))
+            .then(data => this.$emit("authenticated", data.toUpperCase()))
 
 
 
