@@ -4,11 +4,11 @@ confirm_logged_in();
 
 $id = $_GET['id'];
 
-$current_product = getSingleInfo($id);
+$current_info = getSingleInfo($id);
 
 
 
-if (!$current_product) {
+if (!$current_info) {
     $message = 'Failed to get user info';
 }
 
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         'id' => $id,
         'image'     =>  $_FILES['image'],
         'name'     =>  $_POST['name'],
-        'value'      =>  $_POST['value'],
+        'link'      =>  $_POST['link'],
         'description'       =>  $_POST['description'],
 
 
@@ -35,27 +35,27 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Product</title>
+    <title>Edit Info</title>
 </head>
 
 <body>
-    <h1>Edit Product</h1>
+    <h1>Edit Info</h1>
 
     <?php echo !empty($message) ? $message : ''; ?>
     <form action='admin_editinfo.php?id=<?php echo $id; ?>' method="post" enctype="multipart/form-data">
-        <?php if ($current_product) : ?>
-            <?php while ($product_info = $current_product->fetch(PDO::FETCH_ASSOC)) : ?>
-                <label>Product Image:</label><br>
+        <?php if ($current_info) : ?>
+            <?php while ($info_result = $current_info->fetch(PDO::FETCH_ASSOC)) : ?>
+                <label>Image:</label><br>
                 <input type='file' name="image" value=""><br><br>
 
-                <label>Product Name:</label><br>
-                <input type='text' name="name" value="<?php echo $product_info['name']; ?>"><br><br>
+                <label>Name:</label><br>
+                <input type='text' name="name" value="<?php echo $info_result['name']; ?>"><br><br>
 
-                <label>Product Value:</label><br>
-                <input type='text' name="value" value="<?php echo $product_info['value']; ?>"><br><br>
+                <label>Link:</label><br>
+                <input type='text' name="link" value="<?php echo $info_result['link']; ?>"><br><br>
 
-                <label>Product Description:</label><br>
-                <textarea type='text' name="description" value=""><?php echo $product_info['description']; ?></textarea><br><br>
+                <label>Description:</label><br>
+                <textarea type='text' name="description" value=""><?php echo $info_result['description']; ?></textarea><br><br>
 
 
 

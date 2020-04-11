@@ -82,17 +82,22 @@
             <router-link class="nav-link" to="/hiv_test">HIV TEST</router-link>
 
           </li>
-          
-          
+
+
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">CONTACT</router-link>
+          </li>
+
+          <li class="nav-item">
+            <a v-if="user" class="nav-link" href="./admin/">HELLO {{user}}</a>
+            <router-link v-else class="nav-link" to="/login">LOGIN</router-link>
           </li>
         </ul>
 
     </nav>
 
 
-    <router-view></router-view>
+    <router-view v-on:authenticated="confirmLogin"></router-view>
 
 
     <footer class=" text-center mt-4">
@@ -167,10 +172,9 @@
     <!-- app div ends -->
   </div>
 
-
   <script src="js/popper.min.js"></script>
   <script src="js/jquery.min.js"></script>
-  
+
   <script src="js/bootstrap.min.js"></script>
   <script type="module" src="js/main.js"></script>
   <script src="js/animations.js"></script>
@@ -191,7 +195,7 @@
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmvjGqiTx7GXcS0Ay-sOzrRAFsIrceuyY&libraries=places"></script>
-   
+
 
 </body>
 

@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
         'image'     =>  $_FILES['image'],
         'title'     =>  $_POST['title'],
         'description'      =>  $_POST['description'],
-        'value'      =>  $_POST['value'],
+        'link'      =>  $_POST['link'],
 
 
     );
@@ -43,8 +43,8 @@ if (isset($_POST['submit'])) {
         <label>Info Title:</label><br>
         <input type='text' name="title" value=""><br><br>
 
-        <label>Info value:</label><br>
-        <input type='text' name="value" value=""><br><br>
+        <label>Info link:</label><br>
+        <input type='text' name="link" value=""><br><br>
 
         <label>Info Description:</label><br>
         <textarea type='text' name="description" value=""></textarea><br><br>
