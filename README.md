@@ -24,9 +24,9 @@ For testing admin page
 * Open MAMP/WAMP
 * Put the project in htdocs folder
 * Import the database from Database folder
-* In the Browser go ``` http://localhost:8888/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP/#/login```
-* ##Login credentials: username:lanle98 password:lekienlan
-* Now you can adit info on the page
+* In the Browser go ``` http://localhost:8888/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP```
+* ##Login credentials: username:lanle password:lanle
+* Now you can edit info on the home page
 
 
 
