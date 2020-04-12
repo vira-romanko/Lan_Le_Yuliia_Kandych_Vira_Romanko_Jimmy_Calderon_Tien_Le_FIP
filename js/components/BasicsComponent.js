@@ -48,7 +48,8 @@ export default {
   <div class="video">
   <h1 class="title text-center m-4 p-4">#TEENTALKS</h1>
   <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/406866739?fbclid=IwAR0_uPRRpBWV89F8MVO_YZoUkSe_SAzIvhn2ydPrSjCGMndgsTLJkFFhONs"></iframe>
+  
 </div>
   </div>
 
