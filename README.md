@@ -27,7 +27,7 @@ memorable for the teenage group for years to come.
 * In the Browser go ``` http://localhost:8888/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP```
 
 For testing admin page 
-* ##Login credentials: username:lanle password:lanle
+* Login credentials: username:lanle password:lanle
 * Now you can edit info on the home page hero section
 
 
