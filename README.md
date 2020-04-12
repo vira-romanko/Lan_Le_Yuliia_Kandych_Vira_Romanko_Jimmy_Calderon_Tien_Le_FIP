@@ -17,16 +17,18 @@ memorable for the teenage group for years to come.
 
 
 
-## ADMIN PAGE
-For testing admin page 
+## SET UP
+
 * Clone the Repo ```git clone```
 * Install NODE ``` npm install```
 * Open MAMP/WAMP
 * Put the project in htdocs folder
 * Import the database from Database folder
 * In the Browser go ``` http://localhost:8888/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP```
+
+For testing admin page 
 * ##Login credentials: username:lanle password:lanle
-* Now you can edit info on the home page
+* Now you can edit info on the home page hero section
 
 
 
