@@ -23,7 +23,8 @@ memorable for the teenage group for years to come.
 * Install NODE ``` npm install```
 * Open MAMP/WAMP
 * Put the project in htdocs folder
-* Import the database from Database folder
+* Create new db in ```PHPMyAdmin``` with the name ```db_teentalks```
+* Import the database from ```/db``` folder
 * In the Browser go ``` http://localhost:8888/Lan_Le_Yuliia_Kandych_Vira_Romanko_Jimmy_Calderon_Tien_Le_FIP```
 
 For testing admin page 
